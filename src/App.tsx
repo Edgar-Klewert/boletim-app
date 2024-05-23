@@ -4,8 +4,15 @@ import { Menu } from './components/menu'
 export function App() {
   return (
     <div className="min-h-screen w-full bg-slate-100">
-      <header className="flex h-16 items-center justify-between border-b-[1px] border-red-400 bg-white px-2">
-        <h2 className="font-bold uppercase">Boletim Acadêmico</h2>
+      <header className="flex h-16 items-center justify-between border-b-[1px] border-red-600 bg-white px-2">
+        <a className="flex items-center">
+          <img
+            src="./src/assets/dgec.png"
+            alt="Logo"
+            className="mr-4 flex h-10 w-auto"
+          />
+          <h2 className="font-bold uppercase">Boletim Acadêmico</h2>
+        </a>
         <button className="flex items-center gap-1 rounded text-red-500">
           <LucideLogOut size={20} />
           Sair

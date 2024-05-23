@@ -11,7 +11,7 @@ export function App() {
             alt="Logo"
             className="mr-4 flex h-10 w-auto"
           />
-          <h2 className="font-bold uppercase">Boletim Acadêmico</h2>
+          <h2 className="font-bold uppercase">Boletim Acadêmico - PMPA</h2>
         </a>
         <button className="flex items-center gap-1 rounded text-red-500">
           <LucideLogOut size={20} />
@@ -20,13 +20,12 @@ export function App() {
       </header>
       <div className="flex">
         <Menu />
-
         <main className="flex flex-1 flex-col items-center justify-center space-y-4">
           <h1 className="text-4xl font-bold text-blue-950">
             O que você deseja buscar?
           </h1>
           <span className="text-sm font-medium text-blue-950">
-            Encontre os alunos pelo pesquisa global
+            Encontre os alunos pela pesquisa global
           </span>
           <div className="flex w-full max-w-3xl items-center gap-4 rounded-full bg-white px-6 py-4">
             <LucideSearch size={20} className="h-4 w-4 text-slate-600" />

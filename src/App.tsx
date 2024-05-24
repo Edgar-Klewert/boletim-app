@@ -7,7 +7,7 @@ export function App() {
       <header className="flex h-16 items-center justify-between border-b-[1px] border-red-600 bg-white px-2">
         <a className="flex items-center">
           <img
-            src="./src/assets/dgec.png"
+            src="./src/assets/pmpa.png"
             alt="Logo"
             className="mr-4 flex h-10 w-auto"
           />

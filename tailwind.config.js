@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#00006D',
+        'pmpa-default-blue': '#00006D',
       },
     },
   },

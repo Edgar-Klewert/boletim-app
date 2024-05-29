@@ -8,6 +8,8 @@ import { Behaviors } from './pages/behaviors'
 import { Students } from './pages/students'
 import { Admins } from './pages/admins'
 import { Managers } from './pages/managers'
+import { DataManagement } from './pages/data-management'
+import { AcademicRecord } from './pages/academic-record'
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ export const router = createBrowserRouter([
       {
         path: '/behaviors',
         element: <Behaviors />,
+      },
+      {
+        path: '/management',
+        element: <DataManagement />,
+      },
+      {
+        path: '/academic-record',
+        element: <AcademicRecord />,
       },
       {
         path: '/admins',

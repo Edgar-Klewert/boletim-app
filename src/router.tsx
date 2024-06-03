@@ -12,6 +12,7 @@ import { DataManagement } from './pages/data-management'
 import { AcademicRecord } from './pages/academic-record'
 import { Profile } from './pages/profile'
 import { NotFound } from './pages/__errors/404'
+import { Courses } from './pages/courses'
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: '/behaviors',
         element: <Behaviors />,
+      },
+      {
+        path: '/courses',
+        element: <Courses />,
       },
       {
         path: '/management',

@@ -20,7 +20,7 @@ export function Menu({ role }: MenuProps) {
         {role === Role.STUDENT && <StudentMenu />}
       </nav>
       <div className="border-y-2 py-4">
-        <Link to={'/perfil'} className="flex gap-4 text-sm tracking-wider">
+        <Link to={'/profile'} className="flex gap-4 text-sm tracking-wider">
           <LucideCircleUser size={20} />
           Perfil
         </Link>

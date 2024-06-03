@@ -10,6 +10,8 @@ import { Admins } from './pages/admins'
 import { Managers } from './pages/managers'
 import { DataManagement } from './pages/data-management'
 import { AcademicRecord } from './pages/academic-record'
+import { Profile } from './pages/profile'
+import { NotFound } from './pages/__errors/404'
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +50,10 @@ export const router = createBrowserRouter([
         path: '/students',
         element: <Students />,
       },
+      {
+        path: '/profile',
+        element: <Profile />,
+      },
     ],
   },
   {
@@ -59,5 +65,9 @@ export const router = createBrowserRouter([
         element: <SignIn />,
       },
     ],
+  },
+  {
+    path: '*',
+    element: <NotFound />,
   },
 ])

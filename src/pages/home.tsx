@@ -2,13 +2,13 @@ import { LucideSearch } from 'lucide-react'
 import { Role } from '@/utils/enum-role-type'
 
 export function Home() {
-  const role: Role = Role.STUDENT
+  const role: Role = Role.DEV
 
   return (
-    <div className="h-full w-full">
-      <div className="flex">
+    <div className="w-full">
+      <div className="flex h-full">
         {role !== Role.STUDENT && (
-          <main className="flex h-full flex-1 flex-col items-center justify-center space-y-4">
+          <main className="flex flex-1 flex-col items-center justify-center space-y-4">
             <h1 className="text-4xl font-bold text-blue-950">
               O que você deseja buscar?
             </h1>

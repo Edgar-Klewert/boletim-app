@@ -2,7 +2,7 @@ import { LucideSearch } from 'lucide-react'
 import { Role } from '@/utils/enum-role-type'
 
 export function Home() {
-  const role: Role = Role.STUDENT
+  const role: Role = Role.DEV
 
   return (
     <div className="w-full">

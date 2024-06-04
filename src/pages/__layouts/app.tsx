@@ -8,7 +8,7 @@ export function AppLayout() {
     <div className="min-h-screen">
       <Header isLogged />
       <div className="flex h-[55rem] w-full bg-slate-100">
-        <Menu role={Role.STUDENT} />
+        <Menu role={Role.DEV} />
         <Outlet />
       </div>
     </div>

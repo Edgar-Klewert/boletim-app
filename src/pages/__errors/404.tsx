@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export function NotFound() {
   return (
@@ -16,7 +16,7 @@ export function NotFound() {
         </p>
         <Link
           rel="noopener noreferrer"
-          to={"/"}
+          to={'/'}
           className="rounded bg-pmpa-default-blue px-8 py-3 font-semibold text-gray-50 dark:bg-pmpa-default-blue dark:text-gray-50"
         >
           Voltar à página inicial

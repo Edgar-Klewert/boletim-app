@@ -15,7 +15,7 @@ export function Students() {
 
         <div className="mx-auto my-8 grid w-full max-w-7xl grid-cols-3 gap-y-8">
           <Link
-            to={'#'}
+            to={'/addStudents'}
             className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-default-blue px-6 py-4"
           >
             <img

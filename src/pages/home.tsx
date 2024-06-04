@@ -2,7 +2,7 @@ import { LucideSearch } from 'lucide-react'
 import { Role } from '@/utils/enum-role-type'
 
 export function Home() {
-  const role: Role = Role.DEV
+  const role: Role = Role.STUDENT
 
   return (
     <div className="w-full">
@@ -31,7 +31,7 @@ export function Home() {
           <main className="w-full py-6">
             <section className="mx-auto w-full max-w-7xl">
               <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
-                Seus cursos
+                Meus cursos
               </h2>
 
               <div className="mx-auto my-8 grid w-full max-w-6xl grid-cols-3">

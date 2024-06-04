@@ -8,7 +8,7 @@ export function Courses() {
     <main className="w-full py-6">
       <section className="mx-auto w-full max-w-[90rem]">
         <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
-          Alunos
+          Cursos
         </h2>
 
         <div className="mx-auto my-8 grid w-full max-w-7xl grid-cols-3 gap-y-8">
@@ -21,7 +21,7 @@ export function Courses() {
               className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
               alt=""
             />
-            <span className="font-medium text-white">Adicionar Cursos</span>
+            <span className="font-medium text-white">Adicionar Curso</span>
           </Link>
           <Link
             to={'#'}

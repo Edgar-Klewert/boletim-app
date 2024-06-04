@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function NotFound() {
   return (
     <section className="flex min-h-screen items-center justify-center bg-gray-50 p-16 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
@@ -12,13 +14,13 @@ export function NotFound() {
           Mas não se preocupe, você pode encontrar muitas outras coisas em nossa
           página inicial.
         </p>
-        <a
+        <Link
           rel="noopener noreferrer"
-          href="/"
+          to={"/"}
           className="rounded bg-pmpa-default-blue px-8 py-3 font-semibold text-gray-50 dark:bg-pmpa-default-blue dark:text-gray-50"
         >
           Voltar à página inicial
-        </a>
+        </Link>
       </div>
     </section>
   )

@@ -1,19 +1,86 @@
+import { Camera, Pencil } from 'lucide-react'
+import { ChangeEvent, useState } from 'react'
+
 export function Profile() {
+  const [profileImage, setProfileImage] = useState<string | null>(null)
+
+  function handleOnFileSelected(e: ChangeEvent<HTMLInputElement>) {
+    const { files } = e.target
+
+    if (!files) {
+      return null
+    }
+
+    const fileURL = URL.createObjectURL(files[0])
+    setProfileImage(fileURL)
+  }
+
   return (
-    <div className=" flex w-full flex-col items-center">
-      <div className="relative h-24 w-24 rounded-full bg-gray-400">
-        <div className="absolute left-1/2 top-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gray-200"></div>
-      </div>
-      <button className="mt-4 rounded-md bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2">
-        ALTERAR FOTO
-      </button>
-      <div className="mt-8 space-y-4">
-        <p className="font-bold">Nome: RODINELSON DE LIMA SANCHES</p>
-        <p>Email: rodinelsonsanches@gmail.com</p>
-        <p>Curso/Polo: CFP - 2022 / CFAP</p>
-        <p>Nascimento: Invalid da</p>
-        <p>CPF: 90052480259</p>
-      </div>
+    <div className="flex w-full items-center justify-center gap-10">
+      <article className="bg-pmpa-blue-500 flex w-full max-w-4xl gap-8 rounded px-8 py-4">
+        <div className="space-y-1 text-white">
+          <div className="bg-pmpa-blue-800 group  relative flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl">
+            <label
+              htmlFor="file"
+              className="absolute inset-0 flex w-full cursor-pointer items-center justify-center opacity-0 group-hover:bg-black/20 group-hover:opacity-100"
+            >
+              <Camera className="h-6 w-6" />
+              <input
+                type="file"
+                onChange={handleOnFileSelected}
+                className="hidden"
+                id="file"
+                accept="image/jpeg,image/png"
+              />
+            </label>
+            {profileImage && (
+              <img
+                src={profileImage}
+                alt=""
+                className="h-full w-full rounded-3xl object-cover"
+              />
+            )}
+            {!profileImage && <span className="text-7xl font-medium">RS</span>}
+          </div>
+          <p className="text-center text-lg font-medium">Desenvolvedor</p>
+        </div>
+
+        <div className="flex h-80 flex-col justify-between">
+          <div className="space-y-4 text-white">
+            <div className="flex flex-col gap-1">
+              <button className="ml-auto">
+                <Pencil size={25} />
+              </button>
+              <span className="text-4xl font-bold">
+                RODINELSON DE LIMA SANCHES
+              </span>
+            </div>
+            <ul className="h-32 space-y-2 overflow-auto ">
+              <li>Email: rodinelsonsanches@gmail.com</li>
+              <li>CPF: 900.524.802-59</li>
+              <li>Data de nascimento: 01/05/2022</li>
+            </ul>
+          </div>
+
+          <div className="flex w-full justify-around gap-2">
+            <div className="space-y-1 text-white">
+              <span className="text-lg font-medium">Cursos:</span>
+              <ul className="ml-4">
+                <li>CFP - 2022</li>
+                <li>CFP - 2024</li>
+              </ul>
+            </div>
+
+            <div className="space-y-1 text-white">
+              <span className="text-lg font-medium">Polos:</span>
+              <ul className="ml-4">
+                <li>CFAP</li>
+                <li>MARABÁ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   )
 }

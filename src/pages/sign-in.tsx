@@ -8,7 +8,7 @@ export function SignIn() {
 
   return (
     <div className="flex h-full w-full items-center justify-center">
-      <div className="w-full max-w-3xl space-y-4 rounded bg-pmpa-default-blue py-24">
+      <div className="bg-pmpa-blue-700 w-full max-w-3xl space-y-4 rounded py-24">
         <img
           src={PMPALogo}
           className="mx-auto h-24 w-20"
@@ -44,9 +44,9 @@ export function SignIn() {
                 onClick={() => setViewPassword(!viewPassword)}
               >
                 {viewPassword ? (
-                  <EyeOff size={20} className="text-pmpa-default-blue" />
+                  <EyeOff size={20} className="text-pmpa-blue-700" />
                 ) : (
-                  <Eye size={20} className="text-pmpa-default-blue" />
+                  <Eye size={20} className="text-pmpa-blue-700" />
                 )}
               </button>
             </div>

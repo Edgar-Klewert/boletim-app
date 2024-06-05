@@ -8,13 +8,13 @@ export function AcademicRecord() {
     <main className="w-full py-6">
       <section className="mx-auto w-full max-w-[90rem]">
         <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
-         Histórico Escolar
+          Histórico Escolar
         </h2>
 
         <div className="mx-auto my-8 grid w-full max-w-7xl grid-cols-3 gap-y-8">
           <Link
             to={'#'}
-            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-default-blue px-6 py-4"
+            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
           >
             <img
               src={EnableHistory}
@@ -25,7 +25,7 @@ export function AcademicRecord() {
           </Link>
           <Link
             to={'#'}
-            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-default-blue px-6 py-4"
+            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
           >
             <img
               src={InfoStudent}
@@ -36,7 +36,7 @@ export function AcademicRecord() {
           </Link>
           <Link
             to={'#'}
-            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-default-blue px-6 py-4"
+            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
           >
             <img
               src={Ementas}

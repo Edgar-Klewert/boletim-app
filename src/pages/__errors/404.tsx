@@ -17,7 +17,7 @@ export function NotFound() {
         <Link
           rel="noopener noreferrer"
           to={'/'}
-          className="rounded bg-pmpa-default-blue px-8 py-3 font-semibold text-gray-50 dark:bg-pmpa-default-blue dark:text-gray-50"
+          className="bg-pmpa-blue-700 dark:bg-pmpa-blue-700 rounded px-8 py-3 font-semibold text-gray-50 dark:text-gray-50"
         >
           Voltar à página inicial
         </Link>

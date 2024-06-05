@@ -13,7 +13,7 @@ import { AcademicRecord } from './pages/academic-record'
 import { Profile } from './pages/profile'
 import { NotFound } from './pages/__errors/404'
 import { Courses } from './pages/courses'
-import { AddStudents } from './pages/addStudents'
+import { AddStudents } from './pages/add-students'
 
 export const router = createBrowserRouter([
   {
@@ -27,10 +27,6 @@ export const router = createBrowserRouter([
       {
         path: '/notes',
         element: <Notes />,
-      },
-      {
-        path: '/addStudents',
-        element: <AddStudents />,
       },
       {
         path: '/behaviors',
@@ -57,12 +53,16 @@ export const router = createBrowserRouter([
         element: <Managers />,
       },
       {
+        path: '/profile',
+        element: <Profile />,
+      },
+      {
         path: '/students',
         element: <Students />,
       },
       {
-        path: '/profile',
-        element: <Profile />,
+        path: '/students/add',
+        element: <AddStudents />,
       },
     ],
   },

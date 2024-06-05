@@ -14,6 +14,7 @@ import { Profile } from './pages/profile'
 import { NotFound } from './pages/__errors/404'
 import { Courses } from './pages/courses'
 import { AddStudents } from './pages/add-students'
+import { AddManagers } from './pages/add-managers'
 
 export const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
       {
         path: '/students/add',
         element: <AddStudents />,
+      },
+      {
+        path: '/managers/add',
+        element: <AddManagers />,
       },
     ],
   },

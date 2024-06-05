@@ -15,6 +15,7 @@ import { NotFound } from './pages/__errors/404'
 import { Courses } from './pages/courses'
 import { AddStudents } from './pages/add-students'
 import { AddManagers } from './pages/add-managers'
+import { AddAdmins } from './pages/add-admins'
 
 export const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ export const router = createBrowserRouter([
       {
         path: '/managers/add',
         element: <AddManagers />,
+      },
+      {
+        path: '/admins/add',
+        element: <AddAdmins />,
       },
     ],
   },

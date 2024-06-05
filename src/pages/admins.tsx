@@ -14,8 +14,8 @@ export function Admins() {
 
         <div className="mx-auto my-8 grid w-full max-w-7xl grid-cols-3 gap-y-8">
           <Link
-            to={'#'}
-            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
+            to={'/admins/add'}
+            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
           >
             <img
               src={PlusIcon}
@@ -28,7 +28,7 @@ export function Admins() {
           </Link>
           <Link
             to={'#'}
-            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
+            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
           >
             <img
               src={UpdateIcon}
@@ -41,7 +41,7 @@ export function Admins() {
           </Link>
           <Link
             to={'#'}
-            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
+            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
           >
             <img
               src={ActiveIcon}
@@ -52,7 +52,7 @@ export function Admins() {
           </Link>
           <Link
             to={'#'}
-            className="bg-pmpa-blue-700 relative flex h-52 w-full max-w-80 justify-end rounded px-6 py-4"
+            className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
           >
             <img
               src={RemoveIcon}

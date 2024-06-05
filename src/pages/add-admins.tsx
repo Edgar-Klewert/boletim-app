@@ -1,9 +1,9 @@
-export function AddManagers() {
+export function AddAdmins() {
   return (
     <div className="w-full py-6">
       <section className="mx-auto w-full max-w-[90rem]">
         <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
-          Adicionar Supervisores
+          Adicionar Administradores
         </h2>
 
         <div className="mx-auto my-8 w-full max-w-4xl rounded bg-pmpa-blue-700">
@@ -42,30 +42,15 @@ export function AddManagers() {
               />
             </div>
             <div className="space-y-1">
-              <label htmlFor="course" className="text-sm text-gray-200">
-                Selecione o curso
+              <label htmlFor="Senha" className="text-sm text-gray-200">
+                Senha:
               </label>
-              <select
-                id="course"
+              <input
+                type="text"
+                id="CPF"
                 className="w-full rounded px-4 py-3 text-sm text-gray-700"
-              >
-                <option value="">Selecione um curso</option>
-                <option value="curso1">CAS</option>
-                <option value="curso2">CFP</option>
-              </select>
-            </div>
-            <div className="space-y-1">
-              <label htmlFor="pole" className="text-sm text-gray-200">
-                Selecione o polo
-              </label>
-              <select
-                id="pole"
-                className="w-full rounded px-4 py-3 text-sm text-gray-700"
-              >
-                <option value="">Selecione um polo</option>
-                <option value="belém">Belém</option>
-                <option value="santarem">Santarém</option>
-              </select>
+                placeholder="Digite sua senha..."
+              />
             </div>
             <button className="ml-auto block rounded bg-blue-800 px-3 py-2 text-white hover:bg-blue-700">
               Adicionar

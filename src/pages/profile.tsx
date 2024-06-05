@@ -17,9 +17,9 @@ export function Profile() {
 
   return (
     <div className="flex w-full items-center justify-center gap-10">
-      <article className="bg-pmpa-blue-500 flex w-full max-w-4xl gap-8 rounded px-8 py-4">
-        <div className="space-y-1 text-white">
-          <div className="bg-pmpa-blue-800 group  relative flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl">
+      <article className="flex w-full max-w-4xl gap-8 rounded bg-pmpa-blue-500 px-8 py-4">
+        <div className="my-auto space-y-1 text-white">
+          <div className="group relative  flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl bg-pmpa-blue-800">
             <label
               htmlFor="file"
               className="absolute inset-0 flex w-full cursor-pointer items-center justify-center opacity-0 group-hover:bg-black/20 group-hover:opacity-100"
@@ -62,18 +62,18 @@ export function Profile() {
             </ul>
           </div>
 
-          <div className="flex w-full justify-around gap-2">
+          <div className="my-auto flex w-full gap-10">
             <div className="space-y-1 text-white">
               <span className="text-lg font-medium">Cursos:</span>
-              <ul className="ml-4">
+              <ul className="ml-0 space-y-1">
                 <li>CFP - 2022</li>
                 <li>CFP - 2024</li>
               </ul>
             </div>
 
             <div className="space-y-1 text-white">
-              <span className="text-lg font-medium">Polos:</span>
-              <ul className="ml-4">
+              <span className="ml-20 text-lg font-medium">Polos:</span>
+              <ul className="ml-20 space-y-1">
                 <li>CFAP</li>
                 <li>MARABÁ</li>
               </ul>

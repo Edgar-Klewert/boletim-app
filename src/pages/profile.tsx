@@ -1,3 +1,11 @@
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
 import { Camera, Pencil } from 'lucide-react'
 import { ChangeEvent, useState } from 'react'
 
@@ -17,9 +25,9 @@ export function Profile() {
 
   return (
     <div className="flex w-full items-center justify-center gap-10">
-      <article className="flex w-full max-w-4xl gap-8 rounded bg-pmpa-blue-500 px-8 py-4">
+      <article className="bg-pmpa-blue-500 flex w-full max-w-4xl gap-8 rounded px-8 py-4">
         <div className="my-auto space-y-1 text-white">
-          <div className="group relative  flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl bg-pmpa-blue-800">
+          <div className="bg-pmpa-blue-800 group  relative flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl">
             <label
               htmlFor="file"
               className="absolute inset-0 flex w-full cursor-pointer items-center justify-center opacity-0 group-hover:bg-black/20 group-hover:opacity-100"
@@ -48,9 +56,110 @@ export function Profile() {
         <div className="flex h-80 flex-col justify-between">
           <div className="space-y-4 text-white">
             <div className="flex flex-col gap-1">
-              <button className="ml-auto">
-                <Pencil size={25} />
-              </button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="ml-auto">
+                    <Pencil size={25} />
+                  </button>
+                </DialogTrigger>
+
+                <DialogContent className="bg-pmpa-blue-700 h-[38rem] w-full max-w-3xl overflow-auto p-0 text-white">
+                  <DialogHeader className="bg-pmpa-blue-900 px-4 py-8">
+                    <DialogTitle>Atualizar perfil</DialogTitle>
+                  </DialogHeader>
+
+                  <form className="relative space-y-2">
+                    <div className="space-y-4 px-6">
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="name" className="text-sm">
+                          Nome Completo:
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="John Doe"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="email" className="text-sm">
+                          E-mail:
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="john@example.com"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="password" className="text-sm">
+                          Senha:
+                        </label>
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="********"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="military-id" className="text-sm">
+                          RG Militar:
+                        </label>
+                        <input
+                          type="text"
+                          id="military-id"
+                          placeholder="29328932"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="father-name" className="text-sm">
+                          Nome do pai:
+                        </label>
+                        <input
+                          type="text"
+                          id="father-name"
+                          placeholder="João Doe"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="mother-name" className="text-sm">
+                          Nome da mãe:
+                        </label>
+                        <input
+                          type="text"
+                          id="mother-name"
+                          placeholder="Joana Doe"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <label htmlFor="birthday" className="text-sm">
+                          Data de nascimento:
+                        </label>
+                        <input
+                          type="text"
+                          id="birthday"
+                          placeholder="20/12/2022"
+                          className="rounded px-4 py-3 text-black"
+                        />
+                      </div>
+                    </div>
+
+                    <DialogFooter className="bg-pmpa-blue-900 sticky bottom-0 left-0 w-full px-8 py-4">
+                      <button
+                        type="submit"
+                        className="hover:bg-pmpa-blue-700 rounded px-4 py-2"
+                      >
+                        Atualizar
+                      </button>
+                    </DialogFooter>
+                  </form>
+                </DialogContent>
+              </Dialog>
               <span className="text-4xl font-bold">
                 RODINELSON DE LIMA SANCHES
               </span>

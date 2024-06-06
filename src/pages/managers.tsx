@@ -25,7 +25,7 @@ export function Managers() {
             <span className="font-medium text-white">Adicionar Gestor</span>
           </Link>
           <Link
-            to={'#'}
+            to={'/managers/update'}
             className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
           >
             <img

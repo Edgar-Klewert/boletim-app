@@ -27,7 +27,7 @@ export function Admins() {
             </span>
           </Link>
           <Link
-            to={'#'}
+            to={'/admins/update'}
             className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
           >
             <img

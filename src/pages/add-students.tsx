@@ -6,7 +6,7 @@ export function AddStudents() {
           Adicionar alunos
         </h2>
 
-        <div className="mx-auto my-8 w-full max-w-4xl rounded bg-pmpa-blue-700">
+        <div className="bg-pmpa-blue-700 mx-auto my-8 w-full max-w-4xl rounded">
           <form className="w-full space-y-4 p-6">
             <div className="space-y-1">
               <label htmlFor="name" className="text-sm text-gray-200">

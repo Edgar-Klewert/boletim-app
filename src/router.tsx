@@ -16,6 +16,7 @@ import { Courses } from './pages/courses'
 import { AddStudents } from './pages/add-students'
 import { AddManagers } from './pages/add-managers'
 import { AddAdmins } from './pages/add-admins'
+import { UpdateStudents } from './pages/update-students'
 
 export const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ export const router = createBrowserRouter([
       {
         path: '/students/add',
         element: <AddStudents />,
+      },
+      {
+        path: '/students/update',
+        element: <UpdateStudents />,
       },
       {
         path: '/managers/add',

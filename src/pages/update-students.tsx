@@ -20,6 +20,17 @@ export function UpdateStudents() {
                 />
               </div>
               <div className="space-y-1">
+                <label htmlFor="cpf" className="text-sm text-gray-200">
+                  CPF:
+                </label>
+                <input
+                  type="text"
+                  id="cpf"
+                  className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                  placeholder="Digite seu CPF..."
+                />
+              </div>
+              <div className="space-y-1">
                 <label htmlFor="email" className="text-sm text-gray-200">
                   E-mail:
                 </label>
@@ -35,7 +46,7 @@ export function UpdateStudents() {
                   Senha:
                 </label>
                 <input
-                  type="senha"
+                  type="password"
                   id="senha"
                   className="w-full rounded px-4 py-3 text-sm text-gray-700"
                   placeholder="Digite sua senha..."
@@ -46,7 +57,7 @@ export function UpdateStudents() {
                   Pai:
                 </label>
                 <input
-                  type="pai"
+                  type="text"
                   id="pai"
                   className="w-full rounded px-4 py-3 text-sm text-gray-700"
                   placeholder="Digite o nome completo do pai..."
@@ -57,10 +68,32 @@ export function UpdateStudents() {
                   Mãe:
                 </label>
                 <input
-                  type="mãe"
+                  type="text"
                   id="mãe"
                   className="w-full rounded px-4 py-3 text-sm text-gray-700"
                   placeholder="Digite o nome completo da mãe..."
+                />
+              </div>
+              <div className="space-y-1">
+                <label htmlFor="civil" className="text-sm text-gray-200">
+                  RG CIVIL:
+                </label>
+                <input
+                  type="text"
+                  id="civil"
+                  className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                  placeholder="Digite seu RG CIVIL..."
+                />
+              </div>
+              <div className="space-y-1">
+                <label htmlFor="civil" className="text-sm text-gray-200">
+                  RG MILITAR:
+                </label>
+                <input
+                  type="text"
+                  id="militar"
+                  className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                  placeholder="Digite seu RG MILITAR..."
                 />
               </div>
               <div className="space-y-1">
@@ -68,7 +101,7 @@ export function UpdateStudents() {
                   DATA DE NASCIMENTO:
                 </label>
                 <input
-                  type="data"
+                  type="date"
                   id="data"
                   className="w-full rounded px-4 py-3 text-sm text-gray-700"
                   placeholder="Digite sua data de nascimento..."

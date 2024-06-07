@@ -25,9 +25,9 @@ export function Profile() {
 
   return (
     <div className="flex w-full items-center justify-center gap-10">
-      <article className="bg-pmpa-blue-500 flex w-full max-w-4xl gap-8 rounded px-8 py-4">
+      <article className="flex w-full max-w-4xl gap-8 rounded bg-pmpa-blue-500 px-8 py-4">
         <div className="my-auto space-y-1 text-white">
-          <div className="bg-pmpa-blue-800 group  relative flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl">
+          <div className="group relative  flex h-52 w-52 items-center justify-center overflow-hidden rounded-3xl bg-pmpa-blue-800">
             <label
               htmlFor="file"
               className="absolute inset-0 flex w-full cursor-pointer items-center justify-center opacity-0 group-hover:bg-black/20 group-hover:opacity-100"
@@ -63,7 +63,7 @@ export function Profile() {
                   </button>
                 </DialogTrigger>
 
-                <DialogContent className="bg-pmpa-blue-700 h-[38rem] w-full max-w-3xl overflow-auto p-0 text-white">
+                <DialogContent className="h-[38rem] w-full max-w-3xl overflow-auto bg-pmpa-blue-700 p-0 text-white">
                   <DialogHeader className="bg-pmpa-blue-900 px-4 py-8">
                     <DialogTitle>Atualizar perfil</DialogTitle>
                   </DialogHeader>
@@ -149,10 +149,10 @@ export function Profile() {
                       </div>
                     </div>
 
-                    <DialogFooter className="bg-pmpa-blue-900 sticky bottom-0 left-0 w-full px-8 py-4">
+                    <DialogFooter className="sticky bottom-0 left-0 w-full bg-pmpa-blue-900 px-8 py-4">
                       <button
                         type="submit"
-                        className="hover:bg-pmpa-blue-700 rounded px-4 py-2"
+                        className="rounded px-4 py-2 hover:bg-pmpa-blue-700"
                       >
                         Atualizar
                       </button>

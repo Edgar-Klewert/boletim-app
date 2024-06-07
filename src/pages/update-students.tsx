@@ -137,7 +137,7 @@ export function UpdateStudents() {
               type="submit"
               className="ml-auto block rounded bg-blue-800 px-3 py-2 text-white hover:bg-blue-700"
             >
-              Adicionar
+              Atualizar
             </button>
           </form>
         </div>

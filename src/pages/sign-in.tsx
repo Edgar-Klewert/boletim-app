@@ -8,7 +8,7 @@ export function SignIn() {
 
   return (
     <div className="flex h-full w-full items-center justify-center">
-      <div className="bg-pmpa-blue-700 w-full max-w-3xl space-y-4 rounded py-24">
+      <div className="w-full max-w-3xl space-y-4 rounded bg-pmpa-blue-700 py-24">
         <img
           src={PMPALogo}
           className="mx-auto h-24 w-20"

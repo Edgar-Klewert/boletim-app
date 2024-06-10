@@ -12,7 +12,7 @@ interface MenuProps {
 
 export function Menu({ role }: MenuProps) {
   return (
-    <aside className="bg-pmpa-blue-700 w-full max-w-60 space-y-8 px-4 py-8 text-white">
+    <aside className="w-full max-w-60 space-y-8 bg-pmpa-blue-700 px-4 py-8 text-white">
       <nav>
         {role === Role.DEV && <DevMenu />}
         {role === Role.ADMIN && <AdminMenu />}

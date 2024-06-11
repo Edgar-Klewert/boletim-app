@@ -19,6 +19,7 @@ import { AddAdmins } from './pages/add-admins'
 import { UpdateStudents } from './pages/update-students'
 import { UpdateManagers } from './pages/update-managers'
 import { UpdateAdmins } from './pages/update-admins'
+import { UpdateCourses } from './pages/update-courses'
 
 export const router = createBrowserRouter([
   {
@@ -88,6 +89,10 @@ export const router = createBrowserRouter([
       {
         path: '/admins/update',
         element: <UpdateAdmins />,
+      },
+      {
+        path: '/courses/update',
+        element: <UpdateCourses />,
       },
     ],
   },

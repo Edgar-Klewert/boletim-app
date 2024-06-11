@@ -23,7 +23,7 @@ export function Courses() {
           <span className="font-medium text-white">Adicionar Curso</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/courses/update'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

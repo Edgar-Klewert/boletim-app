@@ -8,8 +8,8 @@ export function Home() {
     <div className="w-full">
       <div className="flex h-full">
         {role !== Role.STUDENT && (
-          <main className="flex flex-1 flex-col items-center justify-center space-y-4">
-            <h1 className="text-4xl font-bold text-blue-950">
+          <main className="flex flex-1 flex-col items-center justify-center space-y-4 px-2">
+            <h1 className="text-center text-4xl font-bold text-blue-950">
               O que você deseja buscar?
             </h1>
             <span className="text-sm font-medium text-blue-950">
@@ -28,7 +28,7 @@ export function Home() {
         )}
 
         {role === Role.STUDENT && (
-          <main className="w-full py-6">
+          <main className="w-full px-2 py-6">
             <section className="mx-auto w-full max-w-7xl">
               <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
                 Meus cursos

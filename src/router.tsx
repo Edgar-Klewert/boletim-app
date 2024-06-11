@@ -91,6 +91,10 @@ export const router = createBrowserRouter([
         element: <UpdateAdmins />,
       },
       {
+        path: '/courses/add',
+        element: <UpdateCourses />,
+      },
+      {
         path: '/courses/update',
         element: <UpdateCourses />,
       },

@@ -12,7 +12,7 @@ import {
 
 export function ManagerMenu() {
   return (
-    <ul className="flex flex-col items-center justify-center space-y-4 text-lg md:text-sm">
+    <ul className="flex flex-col items-center md:items-start justify-center space-y-4 text-lg md:text-sm">
       <li className="flex gap-4">
         <Link
           to={'/'}

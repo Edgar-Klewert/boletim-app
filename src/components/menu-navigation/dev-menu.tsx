@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 
 export function DevMenu() {
   return (
-    <ul className="flex flex-col items-center justify-center space-y-4 text-lg md:text-sm">
+    <ul className="flex flex-col items-start justify-center space-y-4 text-lg md:text-sm">
       <li className="flex gap-4">
         <Link
           to={'/'}

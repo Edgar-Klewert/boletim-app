@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-const AddCourses = () => {
+export function AddCourses() {
+
   const [name, setName] = useState<string>('');
   const [module, setModule] = useState<string>('');
   const [quantity, setQuantity] = useState<number | ''>('');
@@ -78,6 +79,4 @@ const AddCourses = () => {
       </form>
     </div>
   );
-};
-
-export default AddCourses;
+}

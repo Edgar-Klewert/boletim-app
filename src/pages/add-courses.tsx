@@ -13,39 +13,43 @@ export function AddCourses() {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Definir Informações Sobre o Curso</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <div>
-          <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-            Defina o nome do Curso
-          </label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          />
-        </div>
-        <div>
-          <label htmlFor="module" className="block text-gray-700 font-bold mb-2">
-            Este curso terá módulo, período ou ano?
-          </label>
-          <select
-            id="module"
-            value={module}
-            onChange={(e) => setModule(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          >
-            <option value="">Selecione</option>
-            <option value="módulo">Módulo</option>
-            <option value="período">Período</option>
-            <option value="ano">Ano</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="quantity" className="block text-gray-700 font-bold mb-2">
+    <div className="w-full py-6">
+      <section className="mx-auto w-full max-w-[90rem]">
+        <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
+          Adicionar Cursos
+        </h2>
+
+        <div className="group relative mx-auto my-14 h-[40rem] max-h-screen  max-w-4xl overflow-auto rounded bg-pmpa-blue-700">
+          <form className="w-full space-y-4 p-6">
+            <div className="space-y-1">
+              <label htmlFor="name" className="text-sm text-gray-200">
+                Definir o nome do curso:
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                placeholder="Digite o nome do curso"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="module" className="block text-gray-200  mb-2">
+               Este curso terá módulo, período ou ano?
+             </label>
+             <select
+              id="module"
+              value={module}
+              onChange={(e) => setModule(e.target.value)}
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="">Selecione</option>
+                <option value="módulo">Módulo</option>
+                <option value="período">Período</option>
+                <option value="ano">Ano</option>
+              </select>
+            </div>
+            <div>
+          <label htmlFor="quantity" className="block text-gray-200 mb-2">
             Quantidade de módulos
           </label>
           <input
@@ -53,30 +57,52 @@ export function AddCourses() {
             id="quantity"
             value={quantity}
             onChange={(e) => setQuantity(e.target.value === '' ? '' : Number(e.target.value))}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          />
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
         </div>
         <div>
-          <label htmlFor="weight" className="block text-gray-700 font-bold mb-2">
+          <label htmlFor="weight" className="block text-gray-200 mb-2">
             Este curso terá peso sob os módulos?
           </label>
           <select
             id="weight"
             value={weight.toString()}
             onChange={(e) => setWeight(e.target.value === 'true')}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          >
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             <option value="false">Não</option>
             <option value="true">Sim</option>
           </select>
         </div>
-        <button
-          type="submit"
-          className="bg-pmpa-blue-500 hover:bg-pmpa-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Próximo
-        </button>
-      </form>
+            <div className="space-y-1">
+              <label htmlFor="data" className="text-sm text-gray-200">
+                DATA DE INÍCIO:
+              </label>
+              <input
+                type="date"
+                id="data"
+                className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                placeholder="Digite a data de início do curso"
+              />
+            </div>
+            <div className="space-y-1">
+              <label htmlFor="data" className="text-sm text-gray-200">
+                DATA DE CONLUSÃO:
+              </label>
+              <input
+                type="date"
+                id="data"
+                className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                placeholder="Digite a data de conclusão do curso"
+              />
+            </div>
+            <button
+              type="submit"
+              className="ml-auto block rounded bg-blue-800 px-3 py-2 text-white hover:bg-blue-700"
+            >
+              Adicionar
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
-  );
+  )
 }

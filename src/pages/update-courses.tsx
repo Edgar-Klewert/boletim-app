@@ -6,7 +6,7 @@ export function UpdateCourses() {
           Atualizar alunos
         </h2>
 
-        <div className="group relative mx-auto my-8 h-[46rem] max-h-screen  max-w-4xl overflow-auto rounded bg-pmpa-blue-700">
+        <div className="group relative mx-auto my-14 h-[40rem] max-h-screen  max-w-4xl overflow-auto rounded bg-pmpa-blue-700">
           <form className="w-full space-y-4 p-6">
             <div className="space-y-1">
               <label htmlFor="name" className="text-sm text-gray-200">

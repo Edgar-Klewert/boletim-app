@@ -40,6 +40,20 @@
               <button className="bg-pmpa-blue-700 text-white font-bold py-2 px-10 rounded ">
                 TODOS OS RELATÓRIOS
               </button>
+
+              <div className='py-2 flex-1 items-center'>
+              <select
+                id="filter reports"
+                value={selectedFilter}
+                onChange={(e) => setSelectedFilter(e.target.value)}
+                className="text-center shadow appearance-none roundend-lg border border-gray-500 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ">
+                <option value="Todos">TODOS</option>
+                <option value="Adições">ADIÇÕES</option>
+                <option value="Remoções">REMOÇÕES</option>
+                <option value="Alterações">ALTERAÇÕES</option>
+                <option value="Login">LOGIN</option>
+              </select>
+            </div>
             </div>
           </div>
         </section>    

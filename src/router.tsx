@@ -23,7 +23,8 @@ import { UpdateCourses } from './pages/update-courses'
 import { DeleteCourses } from './pages/delete-courses'
 import { Reports } from './pages/reports'
 import { AddCourses } from './pages/add-courses'
-import Classification from './pages/classification'
+import {Classification} from './pages/classification'
+import { AddStudentsBatch } from './pages/add-student-batch'
 
 export const router = createBrowserRouter([
   {
@@ -81,6 +82,14 @@ export const router = createBrowserRouter([
       {
         path: '/classification',
         element: <Classification />,
+      },
+      {
+        path: '/students/add',
+        element: <AddStudents />,
+      },
+      {
+        path: '/students/batch',
+        element: <AddStudentsBatch />,
       },
       {
         path: '/students/update',

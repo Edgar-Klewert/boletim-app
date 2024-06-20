@@ -26,7 +26,7 @@ export function Behaviors() {
           </span>
         </Link>
         <Link
-          to={'#'}
+          to={'/behaviors/batch'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

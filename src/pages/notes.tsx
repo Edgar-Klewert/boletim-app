@@ -25,7 +25,7 @@ export function Notes() {
           <span className="font-medium text-white">Adicionar Notas</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/notes/batch'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

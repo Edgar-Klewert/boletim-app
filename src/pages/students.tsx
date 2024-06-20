@@ -3,6 +3,7 @@ import AddLotIcon from '@/assets/add-lot-icon.png'
 import UpdateIcon from '@/assets/update-icon.png'
 import ActiveIcon from '@/assets/active-icon.png'
 import RemoveIcon from '@/assets/remove-icon.png'
+import BinIcon from '@/assets/bin-icon.png'
 import { Link } from 'react-router-dom'
 
 export function Students() {
@@ -67,6 +68,19 @@ export function Students() {
             alt=""
           />
           <span className="font-medium text-white">Desativar Alunos</span>
+        </Link>
+        <Link
+          to={'#'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={BinIcon}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">
+            Excluir Aluno
+          </span>
         </Link>
       </div>
     </section>

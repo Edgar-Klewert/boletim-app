@@ -25,6 +25,8 @@ import { Reports } from './pages/reports'
 import { AddCourses } from './pages/add-courses'
 import {Classification} from './pages/classification'
 import { AddStudentsBatch } from './pages/add-student-batch'
+import { AddNotesBatch } from './pages/add-notes-batch'
+import { AddBehaviorsBatch } from './pages/add-behaviors-batch'
 
 export const router = createBrowserRouter([
   {
@@ -98,6 +100,14 @@ export const router = createBrowserRouter([
       {
         path: '/managers/add',
         element: <AddManagers />,
+      },
+      {
+        path: '/notes/batch',
+        element: <AddNotesBatch />,
+      },
+      {
+        path: '/behaviors/batch',
+        element: <AddBehaviorsBatch />,
       },
       {
         path: '/managers/update',

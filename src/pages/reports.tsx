@@ -29,7 +29,7 @@
                 id="filter"
                 value={selectedFilter}
                 onChange={(e) => setSelectedFilter(e.target.value)}
-                className=" flex-1 shadow appearance-none roundend-lg border border-gray-500 w-full rounded-lg py-2 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                className=" flex-1 shadow  roundend-lg border border-gray-500 w-full rounded-lg py-2 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 <option value="Aluno">Aluno</option>
                 <option value="Gestor">Gestor</option>
               </select>
@@ -46,7 +46,7 @@
                 id="filter reports"
                 value={selectedFilter}
                 onChange={(e) => setSelectedFilter(e.target.value)}
-                className="text-center shadow appearance-none roundend-lg border border-gray-500 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ">
+                className="text-center shadow roundend-lg border border-gray-500 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ">
                 <option value="Todos">TODOS</option>
                 <option value="Adições">ADIÇÕES</option>
                 <option value="Remoções">REMOÇÕES</option>

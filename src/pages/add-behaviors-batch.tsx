@@ -48,7 +48,7 @@ export function AddBehaviorsBatch() {
 
         <form onSubmit={handleSubmit}>
           <div className='mb-4 py-8'>
-            <label htmlFor="file" className='block text-gray-700 font-bold mb-2'>
+            <label htmlFor="file" className='block text-slate-700 font-bold mb-2'>
               Selecione um arquivo
             </label>
             <input

@@ -48,13 +48,13 @@ export function AddNotesBatch() {
 
         <form onSubmit={handleSubmit}>
           <div className='mb-4 py-8'>
-            <label htmlFor="file" className='block text-gray-700 font-bold mb-2'>
+            <label htmlFor="file" className='block text-slate-700 font-bold mb-2'>
               Selecione um arquivo
             </label>
             <input
               type="file"
               id="file"
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+              className='shadow appearance-none border rounded w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none focus:shadow-outline'
               onChange={handleFileChange}
             />
           </div>
@@ -66,7 +66,7 @@ export function AddNotesBatch() {
               Inserir Notas
             </button>
             <button
-              className='bg-gray-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+              className='bg-slate-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
               onClick={() => window.history.back()}
             >
               Voltar

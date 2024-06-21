@@ -27,6 +27,7 @@ import {Classification} from './pages/classification'
 import { AddStudentsBatch } from './pages/add-student-batch'
 import { AddNotesBatch } from './pages/add-notes-batch'
 import { AddBehaviorsBatch } from './pages/add-behaviors-batch'
+import { StudentsCoursesOptions } from './pages/students-courses-options'
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path: '/courses',
         element: <Courses />,
+      },
+      {
+        path: '/students-courses-option',
+        element: <StudentsCoursesOptions/>,
       },
       {
         path: '/management',

@@ -1,6 +1,7 @@
-import PlusIcon from '@/assets/add-plus-icon.png'
-import UpdateIcon from '@/assets/update-icon.png'
-import RemoveIcon from '@/assets/remove-icon.png'
+import KTS from '@/assets/kts-icon.png'
+import Info from '@/assets/info-icon.png'
+import Confirmation from '@/assets/confirmation-icon.png'
+import Reportcard from '@/assets/reportcard-icon.png'
 import { Link } from 'react-router-dom'
 
 export function StudentsCoursesOptions() {
@@ -16,7 +17,7 @@ export function StudentsCoursesOptions() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={PlusIcon}
+            src={KTS}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
@@ -27,18 +28,18 @@ export function StudentsCoursesOptions() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={UpdateIcon}
+            src={Info}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
-          <span className="font-medium text-white">Informações Aluno</span>
+          <span className="font-medium text-white">Informações Curso</span>
         </Link>
         <Link
           to={'#'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={RemoveIcon}
+            src={Reportcard}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
@@ -49,7 +50,7 @@ export function StudentsCoursesOptions() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={RemoveIcon}
+            src={Confirmation}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />

@@ -37,7 +37,7 @@ export function Students() {
           <span className="font-medium text-white">Alunos em Lote</span>
         </Link>
         <Link
-          to={'/students/update'}
+          to={'/students/search/update'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -78,22 +78,7 @@ export function Students() {
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
-          <span className="font-medium text-white">
-            Excluir Aluno
-          </span>
-        </Link>
-        <Link
-          to={'#'}
-          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
-        >
-          <img
-            src={BinIcon}
-            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
-            alt=""
-          />
-          <span className="font-medium text-white">
-            Excluir Aluno
-          </span>
+          <span className="font-medium text-white">Excluir Aluno</span>
         </Link>
       </div>
     </section>

@@ -48,7 +48,7 @@ export function Students() {
           <span className="font-medium text-white">Atualizar Alunos</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/students/search/active'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -59,7 +59,7 @@ export function Students() {
           <span className="font-medium text-white">Ativar Alunos</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/students/search/disable'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

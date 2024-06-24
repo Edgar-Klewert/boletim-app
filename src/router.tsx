@@ -29,6 +29,11 @@ import { AddBehaviorsBatch } from './pages/add-behaviors-batch'
 import { StudentsCoursesOptions } from './pages/students-courses-options'
 import { SearchStudentsToUpdate } from './pages/search-students-to-update'
 import { UpdateStudent } from './pages/update-students'
+import { SearchDisableHistory } from './pages/search-disable-history'
+import { SearchActiveHistory } from './pages/search-active-history'
+import { SearchDownloadHistory } from './pages/search-download-history'
+import { SearchStudentsToActive } from './pages/search-students-to-active'
+import { SearchStudentsToDisable } from './pages/search-students-to-disable'
 
 export const router = createBrowserRouter([
   {
@@ -102,6 +107,26 @@ export const router = createBrowserRouter([
       {
         path: '/students/search/update',
         element: <SearchStudentsToUpdate />,
+      },
+      {
+        path: '/students/search/active',
+        element: <SearchStudentsToActive />,
+      },
+      {
+        path: '/students/search/disable',
+        element: <SearchStudentsToDisable />,
+      },
+      {
+        path: '/academic-record/active-search',
+        element: <SearchActiveHistory/>,
+      },
+      {
+        path: '/academic-record/disable-search',
+        element: <SearchDisableHistory/>,
+      },
+      {
+        path: '/academic-record/download-search',
+        element: <SearchDownloadHistory/>,
       },
       {
         path: '/students/update/:id',

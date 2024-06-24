@@ -1,6 +1,6 @@
 import EnableHistory from '@/assets/enable-history-icon.png'
-import InfoStudent from '@/assets/info-student-icon.png'
-import Ementas from '@/assets/ementas-icon.png'
+import RemoveIcon from '@/assets/remove-icon.png'
+import Download from '@/assets/download-icon.png'
 import { Link } from 'react-router-dom'
 
 export function AcademicRecord() {
@@ -12,7 +12,7 @@ export function AcademicRecord() {
 
       <div className="mx-auto my-6 grid w-full max-w-7xl grid-cols-1 justify-items-center gap-4 py-2 md:grid-cols-2 md:justify-items-start lg:grid-cols-3">
         <Link
-          to={'#'}
+          to={'/academic-record/active-search'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -23,26 +23,26 @@ export function AcademicRecord() {
           <span className="font-medium text-white">Ativar Histórico</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/academic-record/disable-search'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={InfoStudent}
+            src={RemoveIcon}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
-          <span className="font-medium text-white">Informações do Aluno</span>
+          <span className="font-medium text-white">Desativar Histórico</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/academic-record/download-search'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={Ementas}
+            src={Download}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
-          <span className="font-medium text-white">Ementas</span>
+          <span className="font-medium text-white">Baixar Histórico</span>
         </Link>
       </div>
     </section>

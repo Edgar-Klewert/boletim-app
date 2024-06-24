@@ -68,17 +68,6 @@ export function Notes() {
           />
           <span className="font-medium text-white">Pesquisar Notas</span>
         </Link>
-        <Link
-          to={'#'}
-          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
-        >
-          <img
-            src={SearchIcon}
-            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
-            alt=""
-          />
-          <span className="font-medium text-white">Pesquisar Notas</span>
-        </Link>
       </div>
     </section>
   )

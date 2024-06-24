@@ -1,16 +1,4 @@
-import { useState } from 'react';
-
 export function AddCourses() {
-  const [name, setName] = useState<string>('');
-  const [module, setModule] = useState<string>('');
-  const [quantity, setQuantity] = useState<number | ''>('');
-  const [weight, setWeight] = useState<boolean>(false);
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log('Course data submitted:', { name, module, quantity, weight });
-  };
-
   return (
     <div className="w-full py-6">
       <section className="mx-auto w-full max-w-[90rem]">
@@ -19,7 +7,7 @@ export function AddCourses() {
         </h2>
 
         <div className="group relative mx-auto my-14 h-[40rem] max-h-screen max-w-4xl overflow-auto rounded bg-pmpa-blue-700">
-          <form className="w-full space-y-4 p-6" onSubmit={handleSubmit}>
+          <form className="w-full space-y-4 p-6">
             <div className="space-y-1">
               <label htmlFor="name" className="text-sm text-gray-200">
                 Definir o nome do curso:
@@ -27,22 +15,18 @@ export function AddCourses() {
               <input
                 type="text"
                 id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                className="w-full rounded-sm px-4 py-3 text-sm text-gray-700"
                 placeholder="Digite o nome do curso"
               />
             </div>
 
             <div>
-              <label htmlFor="module" className="block text-gray-200 mb-2">
+              <label htmlFor="module" className="mb-2 block text-gray-200">
                 Este curso terá módulo, período ou ano?
               </label>
               <select
                 id="module"
-                value={module}
-                onChange={(e) => setModule(e.target.value)}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
               >
                 <option value="">Selecione</option>
                 <option value="módulo">Módulo</option>
@@ -51,27 +35,23 @@ export function AddCourses() {
               </select>
             </div>
             <div>
-              <label htmlFor="quantity" className="block text-gray-200 mb-2">
+              <label htmlFor="quantity" className="mb-2 block text-gray-200">
                 Quantidade de módulos
               </label>
               <input
                 type="number"
                 id="quantity"
-                value={quantity}
-                onChange={(e) => setQuantity(e.target.value === '' ? '' : Number(e.target.value))}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
               />
             </div>
 
             <div>
-              <label htmlFor="weight" className="block text-gray-200 mb-2">
+              <label htmlFor="weight" className="mb-2 block text-gray-200">
                 Este curso terá peso sob os módulos?
               </label>
               <select
                 id="weight"
-                value={weight.toString()}
-                onChange={(e) => setWeight(e.target.value === 'true')}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
               >
                 <option value="false">Não</option>
                 <option value="true">Sim</option>
@@ -84,7 +64,7 @@ export function AddCourses() {
               <input
                 type="date"
                 id="startDate"
-                className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                className="w-full rounded-sm px-4 py-3 text-sm text-gray-700"
                 placeholder="Digite a data de início do curso"
               />
             </div>
@@ -95,7 +75,7 @@ export function AddCourses() {
               <input
                 type="date"
                 id="endDate"
-                className="w-full rounded px-4 py-3 text-sm text-gray-700"
+                className="w-full rounded-sm px-4 py-3 text-sm text-gray-700"
                 placeholder="Digite a data de conclusão do curso"
               />
             </div>
@@ -109,5 +89,5 @@ export function AddCourses() {
         </div>
       </section>
     </div>
-  );
+  )
 }

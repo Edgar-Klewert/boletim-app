@@ -32,7 +32,7 @@ export function StudentsCoursesOptions() {
             alt=""
           />
           <span className="font-medium text-white">Informações Aluno</span>
-        </Link>        
+        </Link>
         <Link
           to={'#'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"

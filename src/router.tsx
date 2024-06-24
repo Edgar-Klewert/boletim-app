@@ -16,18 +16,19 @@ import { Courses } from './pages/courses'
 import { AddStudents } from './pages/add-students'
 import { AddManagers } from './pages/add-managers'
 import { AddAdmins } from './pages/add-admins'
-import { UpdateStudents } from './pages/update-students'
 import { UpdateManagers } from './pages/update-managers'
 import { UpdateAdmins } from './pages/update-admins'
 import { UpdateCourses } from './pages/update-courses'
 import { DeleteCourses } from './pages/delete-courses'
 import { Reports } from './pages/reports'
 import { AddCourses } from './pages/add-courses'
-import {Classification} from './pages/classification'
+import { Classification } from './pages/classification'
 import { AddStudentsBatch } from './pages/add-student-batch'
 import { AddNotesBatch } from './pages/add-notes-batch'
 import { AddBehaviorsBatch } from './pages/add-behaviors-batch'
 import { StudentsCoursesOptions } from './pages/students-courses-options'
+import { SearchStudentsToUpdate } from './pages/search-students-to-update'
+import { UpdateStudent } from './pages/update-students'
 
 export const router = createBrowserRouter([
   {
@@ -52,7 +53,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/students-courses-option',
-        element: <StudentsCoursesOptions/>,
+        element: <StudentsCoursesOptions />,
       },
       {
         path: '/management',
@@ -99,8 +100,12 @@ export const router = createBrowserRouter([
         element: <AddStudentsBatch />,
       },
       {
-        path: '/students/update',
-        element: <UpdateStudents />,
+        path: '/students/search/update',
+        element: <SearchStudentsToUpdate />,
+      },
+      {
+        path: '/students/update/:id',
+        element: <UpdateStudent />,
       },
       {
         path: '/managers/add',

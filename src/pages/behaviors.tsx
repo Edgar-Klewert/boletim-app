@@ -37,7 +37,7 @@ export function Behaviors() {
           <span className="font-medium text-white">Comportamentos em lote</span>
         </Link>
         <Link
-          to={'/'}
+          to={'#'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -50,7 +50,7 @@ export function Behaviors() {
           </span>
         </Link>
         <Link
-          to={'/'}
+          to={'#'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

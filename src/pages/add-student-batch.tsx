@@ -8,7 +8,7 @@ export function AddStudentsBatch() {
 
         <form>
           <div className="mb-4 py-8">
-            <label htmlFor="file" className="mb-2 block text-slate-700">
+            <label htmlFor="file" className="mb-2 block font-bold text-slate-700">
               Selecione um arquivo
             </label>
             <input

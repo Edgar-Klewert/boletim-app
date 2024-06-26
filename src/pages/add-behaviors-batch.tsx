@@ -25,7 +25,7 @@ export function AddBehaviorsBatch() {
               type="submit"
               className="focus:shadow-outline rounded bg-pmpa-blue-500 px-4 py-2 font-bold text-white hover:bg-pmpa-blue-700 focus:outline-none"
             >
-              Inserir Notas
+              Inserir Comportamentos
             </button>
             <button
               className="focus:shadow-outline rounded bg-gray-500 px-4 py-2 font-bold text-white hover:bg-slate-700 focus:outline-none"

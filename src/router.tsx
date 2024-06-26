@@ -34,6 +34,11 @@ import { SearchActiveHistory } from './pages/search-active-history'
 import { SearchDownloadHistory } from './pages/search-download-history'
 import { SearchStudentsToActive } from './pages/search-students-to-active'
 import { SearchStudentsToDisable } from './pages/search-students-to-disable'
+import { SearchAdminToActive } from './pages/search-admin-to-active'
+import { SearchAdminToDisable } from './pages/search-admin-to-disable'
+import { SearchManagersToDisable } from './pages/search-managers-to-disable'
+import { SearchManagersToActive } from './pages/search-managers-to-active'
+import { SearchNotesToUpdate } from './pages/search-notes-to-update'
 
 export const router = createBrowserRouter([
   {
@@ -89,10 +94,6 @@ export const router = createBrowserRouter([
         element: <Reports />,
       },
       {
-        path: '/reports',
-        element: <Reports />,
-      },
-      {
         path: '/classification',
         element: <Classification />,
       },
@@ -117,6 +118,22 @@ export const router = createBrowserRouter([
         element: <SearchStudentsToDisable />,
       },
       {
+        path: '/admin/search/active',
+        element: <SearchAdminToActive />,
+      },
+      {
+        path: '/admin/search/disable',
+        element: <SearchAdminToDisable />,
+      },
+      {
+        path: '/managers/search/active',
+        element: <SearchManagersToActive />,
+      },
+      {
+        path: '/managers/search/disable',
+        element: <SearchManagersToDisable />,
+      },
+      {
         path: '/academic-record/active-search',
         element: <SearchActiveHistory/>,
       },
@@ -127,6 +144,10 @@ export const router = createBrowserRouter([
       {
         path: '/academic-record/download-search',
         element: <SearchDownloadHistory/>,
+      },
+      {
+        path: '/notes/search/update',
+        element: <SearchNotesToUpdate />,
       },
       {
         path: '/students/update/:id',

@@ -36,7 +36,7 @@ export function Managers() {
           <span className="font-medium text-white">Atualizar Gestor</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/managers/search/active'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -47,7 +47,7 @@ export function Managers() {
           <span className="font-medium text-white">Ativar Gestor</span>
         </Link>
         <Link
-          to={'#'}
+          to={'/managers/search/disable'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

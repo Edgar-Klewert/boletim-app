@@ -39,6 +39,7 @@ import { SearchAdminToDisable } from './pages/search-admin-to-disable'
 import { SearchManagersToDisable } from './pages/search-managers-to-disable'
 import { SearchManagersToActive } from './pages/search-managers-to-active'
 import { SearchNotesToUpdate } from './pages/search-notes-to-update'
+import { SearchNotesToRemove } from './pages/search-notes-to-remove'
 
 export const router = createBrowserRouter([
   {
@@ -148,6 +149,14 @@ export const router = createBrowserRouter([
       {
         path: '/notes/search/update',
         element: <SearchNotesToUpdate />,
+      },
+      {
+        path: '/notes/search/update',
+        element: <SearchNotesToUpdate />,
+      },
+      {
+        path: '/notes/search/remove',
+        element: <SearchNotesToRemove />,
       },
       {
         path: '/students/update/:id',

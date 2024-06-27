@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export function SearchNotesToUpdate() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [disciplinas, setDisciplinas] = useState([
+  const [disciplinas] = useState([
     'Armamento Policial',
     'Direito Penal',
     'Direito Processual Penal',

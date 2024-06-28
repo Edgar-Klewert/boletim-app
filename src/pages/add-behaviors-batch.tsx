@@ -5,7 +5,7 @@ export function AddBehaviorsBatch() {
         <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
           Adicionar comportamentos em lote
         </h2>
-
+    
         <form>
           <div className="mb-4 py-8">
             <label

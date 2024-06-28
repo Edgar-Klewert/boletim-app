@@ -151,10 +151,6 @@ export const router = createBrowserRouter([
         element: <SearchNotesToUpdate />,
       },
       {
-        path: '/notes/search/update',
-        element: <SearchNotesToUpdate />,
-      },
-      {
         path: '/notes/search/remove',
         element: <SearchNotesToRemove />,
       },

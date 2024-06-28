@@ -50,8 +50,9 @@ export function SearchNotesToRemove() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">Disciplinas</h1>
-      <div className="flex items-center mb-4">
+      <section className='mx-auto w-full max-w[90rem]'>
+      <h2 className=" w-full border-b-2 border-black py-4 text-xl font-semibold">Disciplinas</h2>
+      <div className="flex py-4 items-center mb-4">
         <input
           type="text"
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -73,6 +74,7 @@ export function SearchNotesToRemove() {
           </div>
         ))}
       </div>
+      </section>
     </div>
   );
 }

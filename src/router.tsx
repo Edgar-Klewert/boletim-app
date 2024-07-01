@@ -40,6 +40,7 @@ import { SearchManagersToDisable } from './pages/search-managers-to-disable'
 import { SearchManagersToActive } from './pages/search-managers-to-active'
 import { SearchNotesToUpdate } from './pages/search-notes-to-update'
 import { SearchNotesToRemove } from './pages/search-notes-to-remove'
+import { UpdateBehavior } from './pages/update-behavior'
 
 export const router = createBrowserRouter([
   {
@@ -101,6 +102,10 @@ export const router = createBrowserRouter([
       {
         path: '/students/add',
         element: <AddStudents />,
+      },
+      {
+        path: '/behavior/update',
+        element: <UpdateBehavior />,
       },
       {
         path: '/students/batch',

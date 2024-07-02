@@ -1,48 +1,50 @@
-import React from 'react';
-import { Pie } from 'react-chartjs-2';
-import 'chart.js/auto';
+import OverallRating from '@/assets/overall-rating-icon.png'
+import ClassificationByPole from '@/assets/classification-by-pole-icon.png'
+import Ementas from '@/assets/ementas-icon.png'
+import { Link } from 'react-router-dom'
 
 export function Classification() {
-  const data = {
-    labels: ['Notas Muito Boas'],
-    datasets: [
-      {
-        data: [100],
-        backgroundColor: ['#32CD32'],
-      },
-    ],
-  };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        display: false,
-      },
-    },
-  };
-
   return (
-    <div className="w-full py-6">
-      <section className="mx-auto w-full max-w-[90rem]">
-        <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
-          Classificação
-        </h2>
+    <section className="mx-auto w-full max-w-[90rem] px-2 py-10 md:py-6">
+      <h2 className="w-full border-b-2 border-b-black text-xl font-semibold">
+        Gerenciamento de dados
+      </h2>
 
-        <div className="flex justify-between items-center mb-2  ">
-          <div className="flex items-center">
-          </div>
-          <div className="flex-1 py-10 items-center text-center">
-            <span className="bg-pmpa-blue-700 text-white font-bold py-4 px-28 rounded">Gráfico de notas</span>
-          </div>
-        </div>
-        <div className="bg-pmpa-blue-500 rounded-lg p-6">
-          <div className="w-1/4">
-            <Pie data={data} options={options} />
-          </div>
-        </div>
-        <h3 className="text-black text-center font-bold mt-4">Classificação Geral: CAS - 2023</h3>
-      </section>
-    </div>
-  );
+      <div className="mx-auto my-6 grid w-full max-w-7xl grid-cols-1 justify-items-center gap-4 py-2 md:grid-cols-2 md:justify-items-start lg:grid-cols-3">
+        <Link
+          to={'#'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={OverallRating}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">Classificação geral</span>
+        </Link>
+        <Link
+          to={'#'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={ClassificationByPole}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">Classificação por polos</span>
+        </Link>
+        <Link
+          to={'#'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={Ementas}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">Ementas</span>
+        </Link>
+      </div>
+    </section>
+  )
 }

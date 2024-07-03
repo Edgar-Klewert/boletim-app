@@ -41,6 +41,8 @@ import { SearchManagersToActive } from './pages/search-managers-to-active'
 import { SearchNotesToUpdate } from './pages/search-notes-to-update'
 import { SearchNotesToRemove } from './pages/search-notes-to-remove'
 import { UpdateBehavior } from './pages/update-behavior'
+import { OverallRating } from './pages/overall-rating'
+import { Ementas } from './pages/ementas'
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +56,10 @@ export const router = createBrowserRouter([
       {
         path: '/notes',
         element: <Notes />,
+      },
+      {
+        path: '/ementas',
+        element: <Ementas />,
       },
       {
         path: '/behaviors',
@@ -102,6 +108,10 @@ export const router = createBrowserRouter([
       {
         path: '/students/add',
         element: <AddStudents />,
+      },
+      {
+        path: '/classification/overall',
+        element: <OverallRating />,
       },
       {
         path: '/behavior/update',

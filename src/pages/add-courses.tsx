@@ -34,6 +34,7 @@ export function AddCourses() {
                 <option value="ano">Ano</option>
               </select>
             </div>
+
             <div>
               <label htmlFor="quantity" className="mb-2 block text-gray-200">
                 Quantidade de módulos
@@ -57,6 +58,7 @@ export function AddCourses() {
                 <option value="true">Sim</option>
               </select>
             </div>
+
             <div className="space-y-1">
               <label htmlFor="startDate" className="text-sm text-gray-200">
                 DATA DE INÍCIO:
@@ -68,6 +70,7 @@ export function AddCourses() {
                 placeholder="Digite a data de início do curso"
               />
             </div>
+
             <div className="space-y-1">
               <label htmlFor="endDate" className="text-sm text-gray-200">
                 DATA DE CONCLUSÃO:
@@ -79,6 +82,19 @@ export function AddCourses() {
                 placeholder="Digite a data de conclusão do curso"
               />
             </div>
+
+            <div className="space-y-1">
+              <label htmlFor="image" className="text-sm text-gray-200">
+                Adicionar imagem do curso:
+              </label>
+              <input
+                type="file"
+                id="image"
+                className="w-full rounded-sm px-4 py-3 text-sm text-gray-700"
+                accept="image/*"
+              />
+            </div>
+
             <button
               type="submit"
               className="ml-auto block rounded bg-blue-800 px-3 py-2 text-white hover:bg-blue-700"
@@ -89,5 +105,5 @@ export function AddCourses() {
         </div>
       </section>
     </div>
-  )
+  );
 }

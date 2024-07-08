@@ -42,9 +42,17 @@ export function UpdateBehavior() {
             </div>
           ))}
         </div>
+        <div>
+        <button
+              type="submit"
+              className="ml-auto block rounded bg-pmpa-blue-800 px-3 py-2 my-3 text-white hover:bg-pmpa-blue-500"
+              >
+              Atualizar
+            </button>
+        </div>
       </div>
       
-      {/* Repeated block for another student */}
+      {}
       <div className="border p-4 rounded mb-4">
         <h2 className="text-lg font-bold mb-4">Nome: AGOSTINHO DE SOUZA</h2>
         <p>Curso: CAS TURMA - 2024</p>
@@ -57,6 +65,14 @@ export function UpdateBehavior() {
               <input type="text" placeholder="0,00" className="border p-2  bg-pmpa-blue-500 text-white rounded w-full text-center" />
             </div>
           ))}
+        </div>
+        <div>
+        <button
+              type="submit"
+              className="ml-auto block rounded bg-pmpa-blue-800 px-3 py-2 my-3 text-white hover:bg-pmpa-blue-500"
+              >
+              Atualizar
+            </button>
         </div>
       </div>
       </section>

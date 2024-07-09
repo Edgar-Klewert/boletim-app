@@ -1,6 +1,8 @@
 import OverallRating from '@/assets/overall-rating-icon.png'
 import ClassificationByPole from '@/assets/classification-by-pole-icon.png'
-import Ementas from '@/assets/ementas-icon.png'
+import Second from '@/assets/second-icon.png'
+import AverageNotes from '@/assets/average-notes-icon.png'
+import AverageBehavior from '@/assets/average-behavior-icon.png'
 import { Link } from 'react-router-dom'
 
 export function Classification() {
@@ -38,7 +40,7 @@ export function Classification() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={Ementas}
+            src={AverageNotes}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
@@ -49,7 +51,7 @@ export function Classification() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={Ementas}
+            src={AverageBehavior}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
@@ -60,7 +62,7 @@ export function Classification() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={Ementas}
+            src={Second}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />

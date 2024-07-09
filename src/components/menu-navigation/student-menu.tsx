@@ -15,7 +15,7 @@ export function StudentMenu() {
       </li>
       <li className="flex gap-4">
         <Link
-          to={'/courses'}
+          to={'/student/academic-record'}
           className="flex items-center justify-center gap-4 md:justify-start"
         >
           <LucideHistory size={20} />

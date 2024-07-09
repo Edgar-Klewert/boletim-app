@@ -45,6 +45,10 @@ import { OverallRating } from './pages/overall-rating'
 import { Subjects } from './pages/subjects'
 import { AddNotes } from './pages/add-notes'
 import { AddBehaviors } from './pages/add-behaviors'
+import { LoginConfirmation } from './pages/login-confirmation'
+import { StudentInformation } from './pages/student-information'
+import { StudentAcademicRecord } from './pages/student/student-academic-record'
+import { CoursesAcademicRecord } from './pages/student/courses-academic-record'
 
 export const router = createBrowserRouter([
   {
@@ -78,6 +82,22 @@ export const router = createBrowserRouter([
       {
         path: '/behaviors/add',
         element: <AddBehaviors />,
+      },
+      {
+        path: '/student/academic-record',
+        element: <StudentAcademicRecord />,
+      },
+      {
+        path: '/student/academic-record/courses',
+        element: <CoursesAcademicRecord />,
+      },
+      {
+        path: '/management/login-confirmation',
+        element: <LoginConfirmation />,
+      },
+      {
+        path: '/management/student-info',
+        element: <StudentInformation />,
       },
       {
         path: '/students-courses-option',

@@ -43,7 +43,7 @@
 
               <div className='py-2 flex-1 items-center'>
               <select
-                id="filter reports"
+                id="filter_reports"
                 value={selectedFilter}
                 onChange={(e) => setSelectedFilter(e.target.value)}
                 className="text-center shadow roundend-lg border border-gray-500 rounded-lg py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ">

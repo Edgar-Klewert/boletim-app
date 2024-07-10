@@ -1,6 +1,7 @@
 import PlusIcon from '@/assets/add-plus-icon.png'
 import UpdateIcon from '@/assets/update-icon.png'
 import RemoveIcon from '@/assets/remove-icon.png'
+import CourseManagement from '@/assets/course-management-icon.png'
 import { Link } from 'react-router-dom'
 
 export function Courses() {
@@ -43,6 +44,17 @@ export function Courses() {
             alt=""
           />
           <span className="font-medium text-white">Remover curso</span>
+        </Link>
+        <Link
+          to={'/courses/management'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={CourseManagement}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">Gerenciamento de curso</span>
         </Link>
       </div>
     </section>

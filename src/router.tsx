@@ -49,6 +49,12 @@ import { LoginConfirmation } from './pages/login-confirmation'
 import { StudentInformation } from './pages/student-information'
 import { StudentAcademicRecord } from './pages/student/student-academic-record'
 import { CoursesAcademicRecord } from './pages/student/courses-academic-record'
+import { CourseManagement } from './pages/course-management'
+import { Disciplines } from './pages/disciplines'
+import { AllCourses } from './pages/all-courses'
+import { AddDiscipline } from './pages/add-discipline'
+import { StudentHome } from './pages/student/student-home'
+import { SearchNotes } from './pages/search-notes'
 
 export const router = createBrowserRouter([
   {
@@ -58,6 +64,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/student/home',
+        element: <StudentHome />,
       },
       {
         path: '/notes',
@@ -82,6 +92,22 @@ export const router = createBrowserRouter([
       {
         path: '/behaviors/add',
         element: <AddBehaviors />,
+      },
+      {
+        path: '/courses/management',
+        element: <CourseManagement/>,
+      },
+      {
+        path: '/courses/all',
+        element: <AllCourses/>,
+      },
+      {
+        path: '/courses/management/disciplines',
+        element: <Disciplines/>,
+      },
+      {
+        path: '/disciplines/add',
+        element: <AddDiscipline/>,
       },
       {
         path: '/student/academic-record',
@@ -190,6 +216,10 @@ export const router = createBrowserRouter([
       {
         path: '/academic-record/download-search',
         element: <SearchDownloadHistory/>,
+      },
+      {
+        path: '/notes/search/',
+        element: <SearchNotes />,
       },
       {
         path: '/notes/search/update',

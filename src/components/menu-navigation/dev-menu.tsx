@@ -18,7 +18,7 @@ export function DevMenu() {
     <ul className="flex flex-col items-start justify-center space-y-4 text-lg md:text-sm">
       <li className="flex gap-4">
         <Link
-          to={'/'}
+          to={'/dev/home'}
           className="flex items-center justify-center gap-4 md:justify-start"
         >
           <LucideHome size={20} />

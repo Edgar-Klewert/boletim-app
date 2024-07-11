@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Home } from './pages/home'
 import { AppLayout } from './pages/__layouts/app'
 import { AuthLayout } from './pages/__layouts/auth'
 import { SignIn } from './pages/sign-in'
@@ -55,6 +54,7 @@ import { AllCourses } from './pages/all-courses'
 import { AddDiscipline } from './pages/add-discipline'
 import { StudentHome } from './pages/student/student-home'
 import { SearchNotes } from './pages/search-notes'
+import { DevHome } from './pages/dev-home'
 
 export const router = createBrowserRouter([
   {
@@ -62,8 +62,8 @@ export const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: '/',
-        element: <Home />,
+        path: '/dev/home',
+        element: <DevHome />,
       },
       {
         path: '/student/home',

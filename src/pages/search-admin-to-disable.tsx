@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 export function SearchAdminToDisable(){
 
-    const [selectedFilter, setSelectedFilter] = useState('Todos')
+    const [selectedFilter, setSelectedFilter] = useState('Todos');
+    
     return(
         <div className="w-full py-6">
             <section className="mx-auto w-full max-w-[90rem]">

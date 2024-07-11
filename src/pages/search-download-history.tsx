@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 export function SearchDownloadHistory(){
 
-    const [selectedFilter, setSelectedFilter] = useState('Todos')
+    const [selectedFilter, setSelectedFilter] = useState('Todos');
 
     return(
         <div className="w-full py-6">

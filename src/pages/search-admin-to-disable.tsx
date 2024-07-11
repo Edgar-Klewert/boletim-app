@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 export function SearchAdminToDisable(){
+
+    const [selectedFilter, setSelectedFilter] = useState('Todos')
     return(
         <div className="w-full py-6">
             <section className="mx-auto w-full max-w-[90rem]">
@@ -17,6 +21,19 @@ export function SearchAdminToDisable(){
                           placeholder="John Doe..." 
                         />
                         <button className="hidden">Buscar</button>
+                    </div>
+                    <div className='items-center space-x'>
+                        <h2 className='flex w-full justify-center py-3 font-semibold'>SELECIONE O POLO</h2>
+                        <select 
+                        id="filter_search_to_disable"
+                        value={selectedFilter}
+                        onChange={(e) => setSelectedFilter(e.target.value)}
+                        className='flex shadow rounded-lg border border-gray-500 w-full py-1 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'>
+                            <option value="todos">TODOS OS POLOS</option>
+                            <option value="belem">BELÉM</option>
+                            <option value="cfap">CFAP</option>
+                            <option value="castanhal">CASTANHAL</option>
+                        </select>
                     </div>
                 </form>
             </section>

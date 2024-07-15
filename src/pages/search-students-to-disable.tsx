@@ -35,7 +35,6 @@ export function SearchStudentsToDisable(){
                             <option value="belem">BELÉM</option>
                             <option value="maraba">MARABÁ</option>
                         </select>
-
                     </div>
                 </form>
             </section>

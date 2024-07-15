@@ -28,7 +28,7 @@ export function AddCourses() {
                 id="module"
                 className="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
               >
-                <option value="">Selecione</option>
+                <option value="selecione">Selecione</option>
                 <option value="módulo">Módulo</option>
                 <option value="período">Período</option>
                 <option value="ano">Ano</option>

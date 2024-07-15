@@ -16,7 +16,7 @@ export function AddDiscipline() {
                   type="text"
                   id="name"
                   className="w-full rounded px-4 py-3 text-sm text-gray-700"
-                  placeholder="Digite seu nome completo..."
+                  placeholder="Digite o nome da disciplina..."
                 />
               </div>
               <div className="space-y-1">
@@ -41,11 +41,11 @@ export function AddDiscipline() {
                   className="w-full rounded px-4 py-3 text-sm text-gray-700"
                 >
                   <option value="">Selecione um polo</option>
-                  <option value="belém">Belém</option>
+                  <option value="belem">Belém</option>
                   <option value="santarem">Santarém</option>
                 </select>
               </div>
-              <button className="ml-auto block rounded bg-blue-800 px-3 py-2 text-white hover:bg-blue-700">
+              <button className="ml-auto block rounded bg-pmpa-blue-500 px-3 py-2 text-white hover:bg-blue-700">
                 Adicionar
               </button>
             </form>

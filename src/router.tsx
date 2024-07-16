@@ -55,6 +55,8 @@ import { AddDiscipline } from './pages/add-discipline'
 import { StudentHome } from './pages/student/student-home'
 import { SearchNotes } from './pages/search-notes'
 import { DevHome } from './pages/dev-home'
+import { PathSearchDownloadHistory } from './components/ways/path-search-download-history'
+import { PathSearchDisableHistory } from './components/ways/path_search-disable-history'
 
 export const router = createBrowserRouter([
   {
@@ -108,6 +110,14 @@ export const router = createBrowserRouter([
       {
         path: '/disciplines/add',
         element: <AddDiscipline/>,
+      },
+      {
+        path: '/academic-record/courses-download',
+        element: <PathSearchDownloadHistory/>,
+      },
+      {
+        path: '/academic-record/courses-disable',
+        element: <PathSearchDisableHistory/>,
       },
       {
         path: '/student/academic-record',

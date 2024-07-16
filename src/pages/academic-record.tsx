@@ -23,7 +23,7 @@ export function AcademicRecord() {
           <span className="font-medium text-white">Ativar Histórico</span>
         </Link>
         <Link
-          to={'/academic-record/disable-search'}
+          to={'/academic-record/courses-disable'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -34,7 +34,7 @@ export function AcademicRecord() {
           <span className="font-medium text-white">Desativar Histórico</span>
         </Link>
         <Link
-          to={'/academic-record/download-search'}
+          to={'/academic-record/courses-download'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

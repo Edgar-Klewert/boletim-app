@@ -55,8 +55,11 @@ import { AddDiscipline } from './pages/add-discipline'
 import { StudentHome } from './pages/student/student-home'
 import { SearchNotes } from './pages/search-notes'
 import { DevHome } from './pages/dev-home'
-import { PathSearchDownloadHistory } from './components/ways/path-search-download-history'
-import { PathSearchDisableHistory } from './components/ways/path_search-disable-history'
+import { SearchCourseToDisableHistory } from './pages/ways/search-course-to-disable-history'
+import { SearchCourseToDownloadHistory } from './pages/ways/search-course-to-download-history'
+import { SearchCourseToAddBehaviors } from './pages/ways/search-course-to-add-behaviors'
+import { SearchCourseToBatchBehaviors } from './pages/ways/search-course-to-batch-behaviors'
+
 
 export const router = createBrowserRouter([
   {
@@ -112,16 +115,24 @@ export const router = createBrowserRouter([
         element: <AddDiscipline/>,
       },
       {
-        path: '/academic-record/courses-download',
-        element: <PathSearchDownloadHistory/>,
-      },
-      {
-        path: '/academic-record/courses-disable',
-        element: <PathSearchDisableHistory/>,
-      },
-      {
         path: '/student/academic-record',
         element: <StudentAcademicRecord />,
+      },
+      {
+        path: '/academic-record/courses-search-disable',
+        element: <SearchCourseToDisableHistory />,
+      },
+      {
+        path: '/academic-record/courses-search-download',
+        element: <SearchCourseToDownloadHistory />,
+      },
+      {
+        path: '/academic-record/courses-search-add-bahavior',
+        element: <SearchCourseToAddBehaviors />,
+      },
+      {
+        path: '/academic-record/courses-search-batch-bahavior',
+        element: <SearchCourseToBatchBehaviors />,
       },
       {
         path: '/student/academic-record/courses',

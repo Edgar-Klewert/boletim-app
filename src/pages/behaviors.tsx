@@ -13,7 +13,7 @@ export function Behaviors() {
 
       <div className="mx-auto my-6 grid w-full max-w-7xl grid-cols-1 justify-items-center gap-4 py-2 md:grid-cols-2 md:justify-items-start lg:grid-cols-3">
         <Link
-          to={'/behaviors/add'}
+          to={'/academic-record/courses-search-add-bahavior'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -26,7 +26,7 @@ export function Behaviors() {
           </span>
         </Link>
         <Link
-          to={'/behaviors/batch'}
+          to={'/academic-record/courses-search-batch-bahavior'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

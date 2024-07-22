@@ -3,8 +3,8 @@ import { LucideSearch } from 'lucide-react'
 export function DevHome() {
 
   return (
-    <div className="w-full">
-      <div className="flex h-full">
+    <div className="w-full h-full">
+      <div className="flex items-center h-full">
           <main className="flex flex-1 flex-col items-center justify-center space-y-4 px-2">
             <h1 className="text-center text-4xl font-bold text-blue-950">
               O que você deseja buscar?

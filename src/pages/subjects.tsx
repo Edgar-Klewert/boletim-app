@@ -36,11 +36,11 @@ export const Subjects: React.FC = () => {
                             <div className='flex flex-col items-center'>
                                 <img src={course.imageURL} alt="Imagem do curso" className='mb-4' />
                                 <h3 className='text-xl mb-2'>{course.title}</h3>
-                                <Link to="#" className="block" onClick={() => handleCourseClick(course.id)}>
+                                <button className='px-6 py-2 bg-pmpa-blue-500 text-white' onClick={() => handleCourseClick(course.id)}>
                                   <PDFDownloadLink document={<PDFViewer title={course.title} />} fileName='some.pdf'>
-                                    {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className='px-6 py-2 bg-pmpa-blue-500 text-white'>PDF</button>)}
+                                    {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'pdf')}
                                   </PDFDownloadLink>
-                                </Link>
+                                </button>
                             </div>
                         </div>
                     ))}

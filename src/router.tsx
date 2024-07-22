@@ -60,6 +60,9 @@ import { SearchCourseToDownloadHistory } from './pages/ways/search-course-to-dow
 import { SearchCourseToAddBehaviors } from './pages/ways/search-course-to-add-behaviors'
 import { SearchCourseToBatchBehaviors } from './pages/ways/search-course-to-batch-behaviors'
 import { SearchCourseToActiveHistory } from './pages/ways/search-course-to-active-history'
+import { SearchCourseToActiveStudent } from './pages/ways/search-course-to-active-student'
+import { SearchCourseToDisableStudent } from './pages/ways/search-course-to-disable-student'
+import { SearchCourseToUpdateStudent } from './pages/ways/search-course-to-update-student'
 
 
 export const router = createBrowserRouter([
@@ -118,6 +121,18 @@ export const router = createBrowserRouter([
       {
         path: '/student/academic-record',
         element: <StudentAcademicRecord />,
+      },
+      {
+        path: '/students/courses-search-active',
+        element: <SearchCourseToActiveStudent />,
+      },
+      {
+        path: '/students/courses-search-disable',
+        element: <SearchCourseToDisableStudent />,
+      },
+      {
+        path: '/students/courses-search-update',
+        element: <SearchCourseToUpdateStudent />,
       },
       {
         path: '/academic-record/courses-search-active',

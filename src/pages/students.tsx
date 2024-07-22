@@ -37,7 +37,7 @@ export function Students() {
           <span className="font-medium text-white">Alunos em Lote</span>
         </Link>
         <Link
-          to={'/students/search/update'}
+          to={'/students/courses-search-update'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -48,7 +48,7 @@ export function Students() {
           <span className="font-medium text-white">Atualizar Alunos</span>
         </Link>
         <Link
-          to={'/students/search/active'}
+          to={'/students/courses-search-active'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -59,7 +59,7 @@ export function Students() {
           <span className="font-medium text-white">Ativar Alunos</span>
         </Link>
         <Link
-          to={'/students/search/disable'}
+          to={'/students/courses-search-disable'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

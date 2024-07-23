@@ -25,7 +25,7 @@ export function Notes() {
           <span className="font-medium text-white">Adicionar Notas</span>
         </Link>
         <Link
-          to={'/notes/batch'}
+          to={'/notes/courses-search-batch'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -47,7 +47,7 @@ export function Notes() {
           <span className="font-medium text-white">Atualizar Notas</span>
         </Link>
         <Link
-          to={'/notes/search/remove'}
+          to={'/notes/courses-search-batchove'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

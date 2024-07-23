@@ -40,7 +40,7 @@ export function Admins() {
           </span>
         </Link>
         <Link
-          to={'/admin/search/active'}
+          to={'/admin/courses-search-active'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -51,7 +51,7 @@ export function Admins() {
           <span className="font-medium text-white">Ativar Administrador</span>
         </Link>
         <Link
-          to={'/admin/search/disable'}
+          to={'/admin/courses-search-disable'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

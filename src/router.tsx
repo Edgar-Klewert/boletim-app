@@ -63,7 +63,11 @@ import { SearchCourseToActiveHistory } from './pages/ways/search-course-to-activ
 import { SearchCourseToActiveStudent } from './pages/ways/search-course-to-active-student'
 import { SearchCourseToDisableStudent } from './pages/ways/search-course-to-disable-student'
 import { SearchCourseToUpdateStudent } from './pages/ways/search-course-to-update-student'
-
+import { SearchCourseToLoginManagement } from './pages/ways/search-course-to-login-management'
+import { SearchCourseToActiveManager } from './pages/ways/search-course-to-active-manager'
+import { SearchCourseToDisableManager } from './pages/ways/search-course-to-disable-manager'
+import { SearchCourseToBatchNotes } from './pages/ways/search-course-to-batch-notes'
+import { SearchCourseToRemoveNotes } from './pages/ways/search-course-to-remove-notes'
 
 export const router = createBrowserRouter([
   {
@@ -135,6 +139,14 @@ export const router = createBrowserRouter([
         element: <SearchCourseToUpdateStudent />,
       },
       {
+        path: '/managers/courses-search-active',
+        element: <SearchCourseToActiveManager />,
+      },
+      {
+        path: '/managers/courses-search-disable',
+        element: <SearchCourseToDisableManager />,
+      },
+      {
         path: '/academic-record/courses-search-active',
         element: <SearchCourseToActiveHistory />,
       },
@@ -147,12 +159,24 @@ export const router = createBrowserRouter([
         element: <SearchCourseToDownloadHistory />,
       },
       {
+        path: '/notes/courses-search-batch',
+        element: <SearchCourseToBatchNotes />,
+      },
+      {
+        path: '/notes/courses-search-remove',
+        element: <SearchCourseToRemoveNotes />,
+      },
+      {
         path: '/academic-record/courses-search-add-bahavior',
         element: <SearchCourseToAddBehaviors />,
       },
       {
         path: '/academic-record/courses-search-batch-bahavior',
         element: <SearchCourseToBatchBehaviors />,
+      },
+      {
+        path: '/academic-record/courses-search-login-management',
+        element: <SearchCourseToLoginManagement />,
       },
       {
         path: '/student/academic-record/courses',

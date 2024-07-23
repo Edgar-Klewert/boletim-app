@@ -22,7 +22,7 @@ export function SearchCourseToBatchBehaviors(){
                         <div key={course.id} className='bg-white shadow-md m-10 w-80 py-1'>
                             <Link to={`/behaviors/batch`} className='block'>
                                 <div className='flex flex-col items-center'>
-                                    <img src={course.imageURL} alt="Imagem ddo curso" className='mb-4' />
+                                    <img src={course.imageURL} alt="Imagem do curso" className='mb-4' />
                                     <h3 className='text-xl mb-2'>{course.title}</h3>
                                 </div>
                             </Link>

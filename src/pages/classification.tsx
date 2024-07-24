@@ -44,7 +44,7 @@ export function Classification() {
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
-          <span className="font-medium text-white">Média por notas</span>
+          <span className="font-medium text-white">Média de notas - polos</span>
         </Link>
         <Link
           to={'#'}
@@ -55,7 +55,7 @@ export function Classification() {
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />
-          <span className="font-medium text-white">Média por comportamento</span>
+          <span className="font-medium text-white">Média de comportamento - polos</span>
         </Link>
         <Link
           to={'#'}

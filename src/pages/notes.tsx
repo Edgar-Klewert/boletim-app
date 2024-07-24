@@ -14,7 +14,7 @@ export function Notes() {
 
       <div className="mx-auto my-6 grid w-full max-w-7xl grid-cols-1 justify-items-center gap-4 py-2 md:grid-cols-2 md:justify-items-start lg:grid-cols-3">
         <Link
-          to={'/notes/add'}
+          to={'/notes/courses-search-add'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -36,7 +36,7 @@ export function Notes() {
           <span className="font-medium text-white">Notas em Lote</span>
         </Link>
         <Link
-          to={'/notes/search/update'}
+          to={'/notes/courses-search-update'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -47,7 +47,7 @@ export function Notes() {
           <span className="font-medium text-white">Atualizar Notas</span>
         </Link>
         <Link
-          to={'/notes/courses-search-batchove'}
+          to={'/notes/courses-search-remove'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
@@ -58,7 +58,7 @@ export function Notes() {
           <span className="font-medium text-white">Remover Notas</span>
         </Link>
         <Link
-          to={'/notes/search'}
+          to={'/notes/search-course-notes'}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

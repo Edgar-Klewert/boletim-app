@@ -68,6 +68,11 @@ import { SearchCourseToActiveManager } from './pages/ways/search-course-to-activ
 import { SearchCourseToDisableManager } from './pages/ways/search-course-to-disable-manager'
 import { SearchCourseToBatchNotes } from './pages/ways/search-course-to-batch-notes'
 import { SearchCourseToRemoveNotes } from './pages/ways/search-course-to-remove-notes'
+import { SearchCourseToAddNotes } from './pages/ways/search-course-to-add-notes'
+import { SearchCourseToUpdateNotes } from './pages/ways/search-course-to-update-notes'
+import { SearchCourseToNotes } from './pages/ways/search-course-to-notes'
+import { SearchCourseToUpdateBehaviors } from './pages/ways/search-course-to-update-behaviors'
+import { SearchCourseToRemoveBehaviors } from './pages/ways/search-course-to-remove-behaviors'
 
 export const router = createBrowserRouter([
   {
@@ -163,16 +168,40 @@ export const router = createBrowserRouter([
         element: <SearchCourseToBatchNotes />,
       },
       {
+        path: '/notes/courses-search-add',
+        element: <SearchCourseToAddNotes />,
+      },
+      {
+        path: '/notes/courses-search-update',
+        element: <SearchCourseToUpdateNotes />,
+      },
+      {
+        path: '/notes/search-course-notes',
+        element: <SearchCourseToNotes />,
+      },
+      {
         path: '/notes/courses-search-remove',
         element: <SearchCourseToRemoveNotes />,
       },
       {
-        path: '/academic-record/courses-search-add-bahavior',
+        path: '/behaviors/courses-search-add-bahavior',
         element: <SearchCourseToAddBehaviors />,
       },
       {
-        path: '/academic-record/courses-search-batch-bahavior',
+        path: '/behaviors/courses-search-batch-bahavior',
         element: <SearchCourseToBatchBehaviors />,
+      },
+      {
+        path: '/behaviors/courses-search-update-bahavior',
+        element: <SearchCourseToUpdateBehaviors />,
+      },
+      {
+        path: '/behaviors/courses-search-update-bahavior',
+        element: <SearchCourseToUpdateBehaviors />,
+      },
+      {
+        path: '/behaviors/courses-search-remove-bahavior',
+        element: <SearchCourseToRemoveBehaviors />,
       },
       {
         path: '/academic-record/courses-search-login-management',

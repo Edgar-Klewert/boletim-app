@@ -73,6 +73,7 @@ import { SearchCourseToUpdateNotes } from './pages/ways/search-course-to-update-
 import { SearchCourseToNotes } from './pages/ways/search-course-to-notes'
 import { SearchCourseToUpdateBehaviors } from './pages/ways/search-course-to-update-behaviors'
 import { SearchCourseToRemoveBehaviors } from './pages/ways/search-course-to-remove-behaviors'
+import { SearchCourseToOverallRating } from './pages/ways/search-course-to-overall-rating'
 
 export const router = createBrowserRouter([
   {
@@ -186,6 +187,10 @@ export const router = createBrowserRouter([
       {
         path: '/behaviors/courses-search-add-bahavior',
         element: <SearchCourseToAddBehaviors />,
+      },
+      {
+        path: '/overall/courses-search-overall-rating',
+        element: <SearchCourseToOverallRating />,
       },
       {
         path: '/behaviors/courses-search-batch-bahavior',

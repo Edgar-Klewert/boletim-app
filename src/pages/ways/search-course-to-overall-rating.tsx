@@ -9,7 +9,7 @@ const courses = [
     { id: 3, title: 'CGS TURMA II - 2023', imageURL: CGSImage},
 ];
 
-export function SearchCourseToOverallRating(){
+export function SearchCourseToGeneralClassification(){
     return(
         <div className='w-full py-6'>
             <section className='mx-auto w-full max-w-[90rem]'>
@@ -20,7 +20,7 @@ export function SearchCourseToOverallRating(){
                 <div className='flex flex-wrap justify-center'>
                 {courses.map((course) =>(
                         <div key={course.id} className='bg-white shadow-md m-10 w-80 py-1'>
-                            <Link to={`/classification/overall`} className='block'>
+                            <Link to={`/classification/general-classification`} className='block'>
                                 <div className='flex flex-col items-center'>
                                     <img src={course.imageURL} alt="Imagem do curso" className='mb-4' />
                                     <h3 className='text-xl mb-2'>{course.title}</h3>

@@ -40,7 +40,6 @@ import { SearchManagersToActive } from './pages/search-managers-to-active'
 import { SearchNotesToUpdate } from './pages/search-notes-to-update'
 import { SearchNotesToRemove } from './pages/search-notes-to-remove'
 import { UpdateBehavior } from './pages/update-behavior'
-import { OverallRating } from './pages/overall-rating'
 import { Subjects } from './pages/subjects'
 import { AddNotes } from './pages/add-notes'
 import { AddBehaviors } from './pages/add-behaviors'
@@ -73,7 +72,8 @@ import { SearchCourseToUpdateNotes } from './pages/ways/search-course-to-update-
 import { SearchCourseToNotes } from './pages/ways/search-course-to-notes'
 import { SearchCourseToUpdateBehaviors } from './pages/ways/search-course-to-update-behaviors'
 import { SearchCourseToRemoveBehaviors } from './pages/ways/search-course-to-remove-behaviors'
-import { SearchCourseToOverallRating } from './pages/ways/search-course-to-overall-rating'
+import { GeneralClassification } from './pages/general-classification'
+import { SearchCourseToGeneralClassification } from './pages/ways/search-course-to-overall-rating'
 
 export const router = createBrowserRouter([
   {
@@ -189,8 +189,8 @@ export const router = createBrowserRouter([
         element: <SearchCourseToAddBehaviors />,
       },
       {
-        path: '/overall/courses-search-overall-rating',
-        element: <SearchCourseToOverallRating />,
+        path: '/classification/courses-search-general-classification',
+        element: <SearchCourseToGeneralClassification />, 
       },
       {
         path: '/behaviors/courses-search-batch-bahavior',
@@ -265,8 +265,8 @@ export const router = createBrowserRouter([
         element: <AddStudents />,
       },
       {
-        path: '/classification/overall',
-        element: <OverallRating />,
+        path: '/classification/general-classification',
+        element: <GeneralClassification />,
       },
       {
         path: '/behavior/update',

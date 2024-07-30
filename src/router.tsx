@@ -74,6 +74,7 @@ import { SearchCourseToUpdateBehaviors } from './pages/ways/search-course-to-upd
 import { SearchCourseToRemoveBehaviors } from './pages/ways/search-course-to-remove-behaviors'
 import { GeneralClassification } from './pages/general-classification'
 import { SearchCourseToGeneralClassification } from './pages/ways/search-course-to-overall-rating'
+import { BehaviorRemove } from './pages/behavior-remove'
 
 export const router = createBrowserRouter([
   {
@@ -219,6 +220,10 @@ export const router = createBrowserRouter([
       {
         path: '/management/login-confirmation',
         element: <LoginConfirmation />,
+      },
+      {
+        path: '/behaviors/behaviors-remove',
+        element: <BehaviorRemove />,
       },
       {
         path: '/management/student-info',

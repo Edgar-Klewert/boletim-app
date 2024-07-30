@@ -38,7 +38,7 @@ export const Subjects: React.FC = () => {
                                 <h3 className='text-xl mb-2'>{course.title}</h3>
                                 <button className='px-6 py-2 bg-pmpa-blue-500 text-white' onClick={() => handleCourseClick(course.id)}>
                                   <PDFDownloadLink document={<PDFViewer title={course.title} />} fileName='some.pdf'>
-                                    {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'pdf')}
+                                    {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Baixar')}
                                   </PDFDownloadLink>
                                 </button>
                             </div>

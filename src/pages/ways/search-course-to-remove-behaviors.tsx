@@ -20,7 +20,7 @@ export function SearchCourseToRemoveBehaviors(){
                 <div className='flex flex-wrap justify-center'>
                     {courses.map((course) =>(
                         <div key={course.id} className='bg-white shadow-md m-10 w-80 py-1'>
-                            <Link to={`#`} className='block'>
+                            <Link to={`/behaviors/behaviors-remove`} className='block'>
                                 <div className='flex flex-col items-center'>
                                     <img src={course.imageURL} alt="Imagem do curso" className='mb-4' />
                                     <h3 className='text-xl mb-2'>{course.title}</h3>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CFOImage from '@/assets/cfo-img-curso.jpg';
 import CASImage from '@/assets/cas-img-course.png';
 import CGSImage from '@/assets/cgs-img-course.png';
-import PDFViewer from '@/components/pdf/PDFViewer'; 
+import PDFViewer from '@/components/templates/subject-viewer'; 
 import { PDFDownloadLink } from '@react-pdf/renderer';
 
 const courses = [

@@ -1,5 +1,7 @@
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import GeneralClassificationViewer from '@/components/templates/general-classification-viewer';
 
 export function GeneralClassification() {
   const data = {
@@ -20,6 +22,13 @@ export function GeneralClassification() {
       },
     },
   };
+
+  const pdfData = [
+    { class: '1º', rg: '23826', name: 'Igor Bomba', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '2º', rg: '23751', name: 'Alan Gay', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '3º', rg: '23751', name: 'Felipe Fumas', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '4º', rg: '23751', name: 'Paulo Coleta', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+  ];
 
   return (
     <div className="w-full py-6">
@@ -53,48 +62,31 @@ export function GeneralClassification() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="py-2 px-4 text-sm text-slate-700">1º</td>
-                <td className="py-2 px-4 text-sm text-slate-700">23826</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Igor Bomba</td>
-                <td className="py-2 px-4 text-sm text-slate-700">9.784</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Muito Bom</td>
-                <td className="py-2 px-4 text-sm text-slate-700">01/01/1975</td>
-                <td className="py-2 px-4 text-sm text-slate-700">SANTARÉM</td>
-                <td className="py-2 px-4 text-sm text-slate-700">APROVADO</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 text-sm text-slate-700">2º</td>
-                <td className="py-2 px-4 text-sm text-slate-700">23751</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Alan Gay</td>
-                <td className="py-2 px-4 text-sm text-slate-700">9.724</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Muito Bom</td>
-                <td className="py-2 px-4 text-sm text-slate-700">01/01/1924</td>
-                <td className="py-2 px-4 text-sm text-slate-700">SANTARÉM</td>
-                <td className="py-2 px-4 text-sm text-slate-700">APROVADO</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 text-sm text-slate-700">3º</td>
-                <td className="py-2 px-4 text-sm text-slate-700">23751</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Felipe Fumas</td>
-                <td className="py-2 px-4 text-sm text-slate-700">9.700</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Muito Bom</td>
-                <td className="py-2 px-4 text-sm text-slate-700">01/01/2000</td>
-                <td className="py-2 px-4 text-sm text-slate-700">SANTARÉM</td>
-                <td className="py-2 px-4 text-sm text-slate-700">APROVADO</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 text-sm text-slate-700">4º</td>
-                <td className="py-2 px-4 text-sm text-slate-700">23751</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Paulo Coleta </td>
-                <td className="py-2 px-4 text-sm text-slate-700">9.724</td>
-                <td className="py-2 px-4 text-sm text-slate-700">Muito Bom</td>
-                <td className="py-2 px-4 text-sm text-slate-700">01/01/1924</td>
-                <td className="py-2 px-4 text-sm text-slate-700">SANTARÉM</td>
-                <td className="py-2 px-4 text-sm text-slate-700">APROVADO</td>
-              </tr>
+              {pdfData.map((row, index) => (
+                <tr key={index}>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.class}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.rg}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.name}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.average}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.concept}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.dob}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.polo}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.status}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
+        </div>
+
+        <div className="mt-4 text-center">
+          <PDFDownloadLink
+            document={<GeneralClassificationViewer data={pdfData} />}
+            fileName="classificacao-geral-2023.pdf"
+          >
+            {({ loading }) =>
+              loading ? 'Preparing document...' : <button className="px-4 py-2 bg-pmpa-blue-500 text-white rounded">Download PDF</button>
+            }
+          </PDFDownloadLink>
         </div>
       </section>
     </div>

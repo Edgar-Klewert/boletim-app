@@ -24,10 +24,10 @@ export function GeneralClassification() {
   };
 
   const pdfData = [
-    { class: '1º', rg: '23826', name: 'Igor Bomba', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '2º', rg: '23751', name: 'Alan Gay', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '3º', rg: '23751', name: 'Felipe Fumas', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '4º', rg: '23751', name: 'Paulo Coleta', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '1º', qav: '30/30', qc: '10/10', rg: '23826', name: 'Igor Bomba', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '2º', qav: '30/30', qc: '8/10', rg: '23751', name: 'Alan Gay', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '3º', qav: '27/30', qc: '9/10', rg: '23751', name: 'Felipe Fumas', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '4º', qav: '20/30', qc: '5/10', rg: '23751', name: 'Paulo Coleta', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
   ];
 
   return (
@@ -52,6 +52,8 @@ export function GeneralClassification() {
             <thead>
               <tr className="bg-pmpa-blue-500 border-b">
                 <th className="py-2 px-4 text-left text-sm font-semibold text-white">CLASS</th>
+                <th className="py-2 px-4 text-left text-sm font-semibold text-white">Q.AV</th>
+                <th className="py-2 px-4 text-left text-sm font-semibold text-white">Q.C</th>
                 <th className="py-2 px-4 text-left text-sm font-semibold text-white">RG</th>
                 <th className="py-2 px-4 text-left text-sm font-semibold text-white">NOME COMPLETO</th>
                 <th className="py-2 px-4 text-left text-sm font-semibold text-white">MÉDIA FINAL</th>
@@ -65,7 +67,9 @@ export function GeneralClassification() {
               {pdfData.map((row, index) => (
                 <tr key={index}>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.class}</td>
-                  <td className="py-2 px-4 text-sm text-slate-700">{row.rg}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.qav}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.qc}</td>
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.rg}</td>           
                   <td className="py-2 px-4 text-sm text-slate-700">{row.name}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.average}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.concept}</td>

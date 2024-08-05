@@ -75,6 +75,8 @@ import { SearchCourseToRemoveBehaviors } from './pages/ways/search-course-to-rem
 import { GeneralClassification } from './pages/general-classification'
 import { SearchCourseToGeneralClassification } from './pages/ways/search-course-to-overall-rating'
 import { BehaviorRemove } from './pages/behavior-remove'
+import { ClassificationPole } from './pages/classification-poles'
+import { ClassificationByPole } from './pages/classification-by-pole'
 
 export const router = createBrowserRouter([
   {
@@ -212,6 +214,14 @@ export const router = createBrowserRouter([
       {
         path: '/academic-record/courses-search-login-management',
         element: <SearchCourseToLoginManagement />,
+      },
+      {
+        path: '/classification/classification-poles',
+        element: <ClassificationPole />,
+      },
+      {
+        path: '/classification/classification-by-pole',
+        element: <ClassificationByPole />,
       },
       {
         path: '/student/academic-record/courses',

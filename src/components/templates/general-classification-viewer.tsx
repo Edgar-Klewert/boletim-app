@@ -3,21 +3,20 @@ import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 const styles = StyleSheet.create({
   page: {
     padding: 20, 
-    flexDirection: 'row'
+    flexDirection: 'column',
+    fontSize: 10,
   },
   title: {
-    fontSize: 12, 
+    fontSize: 14, 
     marginBottom: 10,
+    textAlign: 'center',
   },
   section: {
     marginBottom: 10,
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
   },
   table: {
     display: 'flex',
-    width: 'auto',
+    width: '100%',
     borderStyle: 'solid',
     borderWidth: 1,
     borderColor: '#000',
@@ -26,20 +25,20 @@ const styles = StyleSheet.create({
   tableRow: {
     flexDirection: 'row',
     borderBottomWidth: 1,
-    borderBottomColor: '#000000',
+    borderBottomColor: '#000',
     borderStyle: 'solid',
   },
   tableCell: {
     flex: 1,
     borderRightWidth: 1,
-    borderRightColor: '#000000',
-    padding: 8,
+    borderRightColor: '#000',
+    padding: 5,
     textAlign: 'center',
-    fontSize: 8, 
+    fontSize: 8,
   },
   lastTableCell: {
     flex: 1,
-    padding: 8,
+    padding: 5,
     textAlign: 'center',
     fontSize: 8,
   },
@@ -64,7 +63,7 @@ interface GeneralClassificationViewerProps {
 
 const GeneralClassificationViewer: React.FC<GeneralClassificationViewerProps> = ({ data }) => (
   <Document>
-    <Page size={{width:800, height: 1200}} style={styles.page}>
+    <Page size="A4" style={styles.page}>
       <View style={styles.section}>
         <Text style={styles.title}>Classificação Geral: CAS - 2023</Text>
         <View style={styles.table}>
@@ -81,8 +80,18 @@ const GeneralClassificationViewer: React.FC<GeneralClassificationViewerProps> = 
             <Text style={styles.lastTableCell}>STATUS</Text>
           </View>
           {data.map((row, index) => (
-            <table key={index}>
-            </table>
+            <View style={styles.tableRow} key={index}>
+              <Text style={styles.tableCell}>{row.class}</Text>
+              <Text style={styles.tableCell}>{row.qav}</Text>
+              <Text style={styles.tableCell}>{row.qc}</Text>
+              <Text style={styles.tableCell}>{row.rg}</Text>
+              <Text style={styles.tableCell}>{row.name}</Text>
+              <Text style={styles.tableCell}>{row.average}</Text>
+              <Text style={styles.tableCell}>{row.concept}</Text>
+              <Text style={styles.tableCell}>{row.dob}</Text>
+              <Text style={styles.tableCell}>{row.polo}</Text>
+              <Text style={styles.lastTableCell}>{row.status}</Text>
+            </View>
           ))}
         </View>
       </View>

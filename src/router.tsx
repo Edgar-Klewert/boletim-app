@@ -54,29 +54,30 @@ import { AddDiscipline } from './pages/add-discipline'
 import { StudentHome } from './pages/student/student-home'
 import { SearchNotes } from './pages/search-notes'
 import { DevHome } from './pages/dev-home'
-import { SearchCourseToDisableHistory } from './pages/ways/search-course-to-disable-history'
-import { SearchCourseToDownloadHistory } from './pages/ways/search-course-to-download-history'
-import { SearchCourseToAddBehaviors } from './pages/ways/search-course-to-add-behaviors'
-import { SearchCourseToBatchBehaviors } from './pages/ways/search-course-to-batch-behaviors'
-import { SearchCourseToActiveHistory } from './pages/ways/search-course-to-active-history'
-import { SearchCourseToActiveStudent } from './pages/ways/search-course-to-active-student'
-import { SearchCourseToDisableStudent } from './pages/ways/search-course-to-disable-student'
-import { SearchCourseToUpdateStudent } from './pages/ways/search-course-to-update-student'
-import { SearchCourseToLoginManagement } from './pages/ways/search-course-to-login-management'
-import { SearchCourseToActiveManager } from './pages/ways/search-course-to-active-manager'
-import { SearchCourseToDisableManager } from './pages/ways/search-course-to-disable-manager'
-import { SearchCourseToBatchNotes } from './pages/ways/search-course-to-batch-notes'
-import { SearchCourseToRemoveNotes } from './pages/ways/search-course-to-remove-notes'
-import { SearchCourseToAddNotes } from './pages/ways/search-course-to-add-notes'
-import { SearchCourseToUpdateNotes } from './pages/ways/search-course-to-update-notes'
-import { SearchCourseToNotes } from './pages/ways/search-course-to-notes'
-import { SearchCourseToUpdateBehaviors } from './pages/ways/search-course-to-update-behaviors'
-import { SearchCourseToRemoveBehaviors } from './pages/ways/search-course-to-remove-behaviors'
+import { SelectCourseToDisableHistory } from './pages/ways/select-course-to-disable-history'
+import { SelectCourseToDownloadHistory } from './pages/ways/select-course-to-download-history'
+import { SelectCourseToAddBehaviors } from './pages/ways/select-course-to-add-behaviors'
+import { SelectCourseToBatchBehaviors } from './pages/ways/select-course-to-batch-behaviors'
+import { SelectCourseToActiveHistory } from './pages/ways/select-course-to-active-history'
+import { SelectCourseToActiveStudent } from './pages/ways/select-course-to-active-student'
+import { SelectCourseToDisableStudent } from './pages/ways/select-course-to-disable-student'
+import { SelectCourseToUpdateStudent } from './pages/ways/select-course-to-update-student'
+import { SelectCourseToLoginManagement } from './pages/ways/select-course-to-login-management'
+import { SelectCourseToActiveManager } from './pages/ways/select-course-to-active-manager'
+import { SelectCourseToDisableManager } from './pages/ways/select-course-to-disable-manager'
+import { SelectCourseToBatchNotes } from './pages/ways/select-course-to-batch-notes'
+import { SelectCourseToRemoveNotes } from './pages/ways/select-course-to-remove-notes'
+import { SelectCourseToAddNotes } from './pages/ways/select-course-to-add-notes'
+import { SelectCourseToUpdateNotes } from './pages/ways/select-course-to-update-notes'
+import { SelectCourseToNotes } from './pages/ways/select-course-to-notes'
+import { SelectCourseToUpdateBehaviors } from './pages/ways/select-course-to-update-behaviors'
+import { SelectCourseToRemoveBehaviors } from './pages/ways/select-course-to-remove-behaviors'
 import { GeneralClassification } from './pages/general-classification'
-import { SearchCourseToGeneralClassification } from './pages/ways/search-course-to-overall-rating'
+import { SelectCourseToGeneralClassification } from './pages/ways/select-course-to-general-classification'
 import { BehaviorRemove } from './pages/behavior-remove'
 import { ClassificationPole } from './pages/classification-poles'
 import { ClassificationByPole } from './pages/classification-by-pole'
+import { AverageScoresForPoles } from './pages/average-scores-for-poles'
 
 export const router = createBrowserRouter([
   {
@@ -137,83 +138,79 @@ export const router = createBrowserRouter([
       },
       {
         path: '/students/courses-search-active',
-        element: <SearchCourseToActiveStudent />,
+        element: <SelectCourseToActiveStudent />,
       },
       {
         path: '/students/courses-search-disable',
-        element: <SearchCourseToDisableStudent />,
+        element: <SelectCourseToDisableStudent />,
       },
       {
         path: '/students/courses-search-update',
-        element: <SearchCourseToUpdateStudent />,
+        element: <SelectCourseToUpdateStudent/>,
       },
       {
         path: '/managers/courses-search-active',
-        element: <SearchCourseToActiveManager />,
+        element: <SelectCourseToActiveManager />,
       },
       {
         path: '/managers/courses-search-disable',
-        element: <SearchCourseToDisableManager />,
+        element: <SelectCourseToDisableManager />,
       },
       {
         path: '/academic-record/courses-search-active',
-        element: <SearchCourseToActiveHistory />,
+        element: <SelectCourseToActiveHistory />,
       },
       {
         path: '/academic-record/courses-search-disable',
-        element: <SearchCourseToDisableHistory />,
+        element: <SelectCourseToDisableHistory />,
       },
       {
         path: '/academic-record/courses-search-download',
-        element: <SearchCourseToDownloadHistory />,
+        element: <SelectCourseToDownloadHistory />,
       },
       {
         path: '/notes/courses-search-batch',
-        element: <SearchCourseToBatchNotes />,
+        element: <SelectCourseToBatchNotes />,
       },
       {
         path: '/notes/courses-search-add',
-        element: <SearchCourseToAddNotes />,
+        element: <SelectCourseToAddNotes />,
       },
       {
         path: '/notes/courses-search-update',
-        element: <SearchCourseToUpdateNotes />,
+        element: <SelectCourseToUpdateNotes />,
       },
       {
         path: '/notes/search-course-notes',
-        element: <SearchCourseToNotes />,
+        element: <SelectCourseToNotes />,
       },
       {
         path: '/notes/courses-search-remove',
-        element: <SearchCourseToRemoveNotes />,
+        element: <SelectCourseToRemoveNotes />,
       },
       {
         path: '/behaviors/courses-search-add-bahavior',
-        element: <SearchCourseToAddBehaviors />,
+        element: <SelectCourseToAddBehaviors />,
       },
       {
         path: '/classification/courses-search-general-classification',
-        element: <SearchCourseToGeneralClassification />, 
+        element: <SelectCourseToGeneralClassification />, 
       },
       {
         path: '/behaviors/courses-search-batch-bahavior',
-        element: <SearchCourseToBatchBehaviors />,
+        element: <SelectCourseToBatchBehaviors />,
       },
       {
         path: '/behaviors/courses-search-update-bahavior',
-        element: <SearchCourseToUpdateBehaviors />,
-      },
-      {
-        path: '/behaviors/courses-search-update-bahavior',
-        element: <SearchCourseToUpdateBehaviors />,
+        element: <SelectCourseToUpdateBehaviors />,
       },
       {
         path: '/behaviors/courses-search-remove-bahavior',
-        element: <SearchCourseToRemoveBehaviors />,
+        element: <SelectCourseToRemoveBehaviors />,
       },
       {
         path: '/academic-record/courses-search-login-management',
-        element: <SearchCourseToLoginManagement />,
+        element: <SelectCourseToLoginManagement />,
       },
       {
         path: '/classification/classification-poles',
@@ -222,6 +219,10 @@ export const router = createBrowserRouter([
       {
         path: '/classification/classification-by-pole',
         element: <ClassificationByPole />,
+      },
+      {
+        path: '/classification/average-scores-for-poles',
+        element: <AverageScoresForPoles />,
       },
       {
         path: '/student/academic-record/courses',

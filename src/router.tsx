@@ -78,6 +78,7 @@ import { BehaviorRemove } from './pages/behavior-remove'
 import { ClassificationPole } from './pages/classification-poles'
 import { ClassificationByPole } from './pages/classification-by-pole'
 import { AverageScoresForPoles } from './pages/average-scores-for-poles'
+import { SelectCourseTheClassificationByPole } from './pages/ways/select-course-the-classification-by-pole'
 
 export const router = createBrowserRouter([
   {
@@ -167,6 +168,10 @@ export const router = createBrowserRouter([
       {
         path: '/academic-record/courses-search-download',
         element: <SelectCourseToDownloadHistory />,
+      },
+      {
+        path: '/',
+        element: <SelectCourseTheClassificationByPole />,
       },
       {
         path: '/notes/courses-search-batch',

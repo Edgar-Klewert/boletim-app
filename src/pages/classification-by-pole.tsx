@@ -1,29 +1,26 @@
 import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import PoloClassificationViewer from '@/components/templates/pole-classification-viewer';
-
-// Definição do tipo DataRow diretamente aqui
-interface DataRow {
-  class: string;
-  qav: string;
-  qc: string;
-  rg: string;
-  name: string;
-  average: string;
-  concept: string;
-  dob: string;
-  polo: string;
-  status: string;
-}
+import GeneralClassificationViewer from '@/components/templates/general-classification-viewer';
 
 export function ClassificationByPole() {
+  const pdfData = [
+    { class: '1º', qav: '30/30', qc: '10/10', rg: '23826', name: 'Lucas Pereira da Silva', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '2º', qav: '30/30', qc: '8/10', rg: '23751', name: 'Mariana Souza Ferreira', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '3º', qav: '27/30', qc: '9/10', rg: '23751', name: 'Eduardo Alves Lima', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '4º', qav: '20/30', qc: '5/10', rg: '23751', name: 'Camila Rocha Costa', average: '5.000', concept: 'Ruim', dob: '01/01/1924', polo: 'SANTARÉM', status: 'REPROVADO' },
+  ];
+
+  // Categorizar dados
+  const goodNotesCount = pdfData.filter(student => parseFloat(student.average) >= 7).length;
+  const failedNotesCount = pdfData.filter(student => parseFloat(student.average) < 7).length;
+
   const data = {
-    labels: ['SANTARÉM', 'OUTRO POLO'],
+    labels: ['Notas Muito Boas', 'Notas Ruins'],
     datasets: [
       {
-        data: [3, 1],
-        backgroundColor: ['#32CD32', '#c40505'],
+        data: [goodNotesCount, failedNotesCount],
+        backgroundColor: ['#1baf1b', '#d30505'], 
       },
     ],
   };
@@ -32,40 +29,26 @@ export function ClassificationByPole() {
     responsive: true,
     plugins: {
       legend: {
-        display: true,
+        display: false,
       },
     },
   };
-
-  const pdfData: DataRow[] = [
-    { class: '1º', qav: '30/30', qc: '10/10', rg: '23826', name: 'Igor Bomba', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '2º', qav: '30/30', qc: '8/10', rg: '23751', name: 'Alan Gay', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '3º', qav: '27/30', qc: '9/10', rg: '23751', name: 'Felipe Fumas', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '4º', qav: '20/30', qc: '5/10', rg: '23751', name: 'Paulo Coleta', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'OUTRO POLO', status: 'APROVADO' },
-  ];
-
-  // Agrupamento dos dados por polo para o PDF
-  const groupedData = pdfData.reduce((acc, item) => {
-    if (!acc[item.polo]) acc[item.polo] = [];
-    acc[item.polo].push(item);
-    return acc;
-  }, {} as { [key: string]: DataRow[] });
 
   return (
     <div className="w-full py-6">
       <section className="mx-auto w-full max-w-[90rem]">
         <h2 className='w-full border-b-2 mb-4 border-b-black text-xl font-semibold'>
-          Classificação por Polos
+          Classificação
         </h2>
-        <div className="bg-pmpa-blue-500 rounded-lg p-4 mb-4 flex flex-col items-center">
-          <div className="text-center text-white font-bold mb-4">Distribuição por Polos</div>
-          <div className="w-1/3">
+        <div className="bg-pmpa-blue-500 rounded-lg p-4 mb-4 flex justify-center items-center">
+          <div className="w-1/3 text-center text-white font-bold">Notas Muito Boas e Ruins</div>
+          <div className="w-1/4">
             <Pie data={data} options={options} />
           </div>
         </div>
 
         <div className="text-center font-bold mb-6">
-          <span className="text-black">Classificação por Polos: CAS - 2023</span>
+          <span className="text-black">Classificação Geral: CAS - 2023</span>
         </div>
 
         <div className="bg-white border border-gray-200 rounded-lg shadow-md">
@@ -90,7 +73,7 @@ export function ClassificationByPole() {
                   <td className="py-2 px-4 text-sm text-slate-700">{row.class}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.qav}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.qc}</td>
-                  <td className="py-2 px-4 text-sm text-slate-700">{row.rg}</td>           
+                  <td className="py-2 px-4 text-sm text-slate-700">{row.rg}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.name}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.average}</td>
                   <td className="py-2 px-4 text-sm text-slate-700">{row.concept}</td>
@@ -105,8 +88,8 @@ export function ClassificationByPole() {
 
         <div className="mt-4 text-center">
           <PDFDownloadLink
-            document={<PoloClassificationViewer data={groupedData} />}
-            fileName="classificacao-por-polos-2023.pdf"
+            document={<GeneralClassificationViewer data={pdfData} />}
+            fileName="classificacao-geral-2023.pdf"
           >
             {({ loading }) =>
               loading ? 'Preparing document...' : <button className="px-4 py-2 bg-pmpa-blue-500 text-white rounded">Download PDF</button>

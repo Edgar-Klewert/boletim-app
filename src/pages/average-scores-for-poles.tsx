@@ -24,10 +24,10 @@ export function AverageScoresForPoles() {
   };
 
   const pdfData = [
-    { class: '1º', qav: '30/30', qc: '10/10', rg: '23826', name: 'Igor Bomba', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '2º', qav: '30/30', qc: '8/10', rg: '23751', name: 'Alan Gay', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '3º', qav: '27/30', qc: '9/10', rg: '23751', name: 'Felipe Fumas', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
-    { class: '4º', qav: '20/30', qc: '5/10', rg: '23751', name: 'Paulo Coleta', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '1º', qav: '30/30', qc: '10/10', rg: '23826', name: 'Lucas Pereira da Silva', average: '9.784', concept: 'Muito Bom', dob: '01/01/1975', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '2º', qav: '30/30', qc: '8/10', rg: '23751', name: 'Mariana Souza Ferreira', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '3º', qav: '27/30', qc: '9/10', rg: '23751', name: 'Eduardo Alves Lima', average: '9.700', concept: 'Muito Bom', dob: '01/01/2000', polo: 'SANTARÉM', status: 'APROVADO' },
+    { class: '4º', qav: '20/30', qc: '5/10', rg: '23751', name: 'Camila Rocha Costa', average: '9.724', concept: 'Muito Bom', dob: '01/01/1924', polo: 'SANTARÉM', status: 'APROVADO' },
   ];
 
   return (

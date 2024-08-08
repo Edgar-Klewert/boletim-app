@@ -2,6 +2,8 @@ import PlusIcon from '@/assets/add-plus-icon.png'
 import UpdateIcon from '@/assets/update-icon.png'
 import RemoveIcon from '@/assets/remove-icon.png'
 import CourseManagement from '@/assets/course-management-icon.png'
+import QTS from '@/assets/import-icon.png'
+import Document from '@/assets/document-icon.png'
 import { Link } from 'react-router-dom'
 
 export function Courses() {
@@ -55,6 +57,32 @@ export function Courses() {
             alt=""
           />
           <span className="font-medium text-white">Gerenciamento de curso</span>
+        </Link>
+        <Link
+          to={'#'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={QTS}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">
+            Importar QTS
+            </span>
+        </Link>
+        <Link
+          to={'#'}
+          className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
+        >
+          <img
+            src={Document}
+            className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+            alt=""
+          />
+          <span className="font-medium text-white">
+            Importar Documentos
+            </span>
         </Link>
       </div>
     </section>

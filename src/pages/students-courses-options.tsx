@@ -1,4 +1,4 @@
-import KTS from '@/assets/kts-icon.png'
+import QTS from '@/assets/qts-icon.png'
 import Info from '@/assets/info-icon.png'
 import Confirmation from '@/assets/confirmation-icon.png'
 import Reportcard from '@/assets/reportcard-icon.png'
@@ -17,7 +17,7 @@ export function StudentsCoursesOptions() {
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img
-            src={KTS}
+            src={QTS}
             className="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
             alt=""
           />

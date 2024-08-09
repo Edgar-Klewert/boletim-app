@@ -170,7 +170,7 @@ export const router = createBrowserRouter([
         element: <SelectCourseToDownloadHistory />,
       },
       {
-        path: '/',
+        path: '/classification/the-classification-by-pole ',
         element: <SelectCourseTheClassificationByPole />,
       },
       {

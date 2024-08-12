@@ -25,7 +25,6 @@ import { Classification } from './pages/classification'
 import { AddStudentsBatch } from './pages/add-student-batch'
 import { AddNotesBatch } from './pages/add-notes-batch'
 import { AddBehaviorsBatch } from './pages/add-behaviors-batch'
-import { StudentsCoursesOptions } from './pages/students-courses-options'
 import { SearchStudentsToUpdate } from './pages/search-students-to-update'
 import { UpdateStudent } from './pages/update-students'
 import { SearchDisableHistory } from './pages/search-disable-history'
@@ -79,6 +78,7 @@ import { ClassificationPole } from './pages/classification-poles'
 import { ClassificationByPole } from './pages/classification-by-pole'
 import { AverageScoresForPoles } from './pages/average-scores-for-poles'
 import { SelectCourseTheClassificationByPole } from './pages/ways/select-course-the-classification-by-pole'
+import { StudentPage } from './pages/student/student-page'
 
 export const router = createBrowserRouter([
   {
@@ -246,10 +246,6 @@ export const router = createBrowserRouter([
         element: <StudentInformation />,
       },
       {
-        path: '/students-courses-option',
-        element: <StudentsCoursesOptions />,
-      },
-      {
         path: '/management',
         element: <DataManagement />,
       },
@@ -280,6 +276,10 @@ export const router = createBrowserRouter([
       {
         path: '/classification',
         element: <Classification />,
+      },
+      {
+        path: '/students/page',
+        element: <StudentPage />,
       },
       {
         path: '/students/add',

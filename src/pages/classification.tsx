@@ -25,7 +25,7 @@ export function Classification() {
           <span className="font-medium text-white">Classificação geral</span>
         </Link>
         <Link
-          to={'/classification/courses-by-pole'}
+          to={'/classification/the-classification-by-pole '}
           className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
         >
           <img

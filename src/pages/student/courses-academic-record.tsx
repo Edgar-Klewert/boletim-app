@@ -13,7 +13,6 @@ const courses = [
 
 export const CoursesAcademicRecord: React.FC = () => {
     const [selectedCourse, setSelectedCourse] = useState<number | null>(null);
-
     const handleCourseClick = (courseId: number) => {
       console.log('Curso selecionado:', courseId);
       setSelectedCourse(courseId);

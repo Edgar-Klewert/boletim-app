@@ -79,6 +79,8 @@ import { ClassificationByPole } from './pages/classification-by-pole'
 import { AverageScoresForPoles } from './pages/average-scores-for-poles'
 import { SelectCourseTheClassificationByPole } from './pages/ways/select-course-the-classification-by-pole'
 import { StudentPage } from './pages/student/student-page'
+import { ImportKtsFile } from './pages/import-kts-file'
+import { ImportDocumentsFile } from './pages/import-documents-file'
 
 export const router = createBrowserRouter([
   {
@@ -108,6 +110,14 @@ export const router = createBrowserRouter([
       {
         path: '/courses',
         element: <Courses />,
+      },
+      {
+        path: '/import/kts',
+        element: <ImportKtsFile />,
+      },
+      {
+        path: '/import/documents',
+        element: <ImportDocumentsFile />,
       },
       {
         path: '/notes/add',

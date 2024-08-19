@@ -81,6 +81,7 @@ import { SelectCourseTheClassificationByPole } from './pages/ways/select-course-
 import { StudentPage } from './pages/student/student-page'
 import { ImportKtsFile } from './pages/import-kts-file'
 import { ImportDocumentsFile } from './pages/import-documents-file'
+import { CourseInformation } from './pages/student/course-information'
 
 export const router = createBrowserRouter([
   {
@@ -134,6 +135,10 @@ export const router = createBrowserRouter([
       {
         path: '/courses/all',
         element: <AllCourses/>,
+      },
+      {
+        path: '/student-page/course-information',
+        element: <CourseInformation/>,
       },
       {
         path: '/courses/management/disciplines',

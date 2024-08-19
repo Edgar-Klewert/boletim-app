@@ -1,6 +1,5 @@
 import QTS from '@/assets/qts-icon.png'
 import Info from '@/assets/info-icon.png'
-import Confirmation from '@/assets/confirmation-icon.png'
 import Reportcard from '@/assets/reportcard-icon.png'
 import { Link } from 'react-router-dom'
 
@@ -24,7 +23,7 @@ export function StudentPage() {
               <span className="font-medium text-white">KTS</span>
             </Link>
             <Link
-              to={'#'}
+              to={'/student-page/course-information'}
               className="relative flex h-52 w-full max-w-80 justify-end rounded bg-pmpa-blue-700 px-6 py-4"
             >
               <img
